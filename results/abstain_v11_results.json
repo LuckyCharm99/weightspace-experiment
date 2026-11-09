@@ -1,0 +1,232 @@
+{
+  "diag": {
+    "abstain": {
+      "n": 290,
+      "mean": 6.78,
+      "p05": 5.04,
+      "p50": 6.46,
+      "p95": 8.38
+    },
+    "answer": {
+      "n": 52,
+      "mean": -5.68,
+      "p05": -7.32,
+      "p50": -5.78,
+      "p95": -4.06
+    },
+    "tau": 0.49
+  },
+  "grid": {
+    "module_none": {
+      "math": [
+        {
+          "head_z": 8.37,
+          "abstain": true
+        },
+        {
+          "head_z": 8.37,
+          "abstain": true
+        },
+        {
+          "head_z": 8.39,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "head_z": 8.24,
+          "abstain": true
+        },
+        {
+          "head_z": 8.23,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "head_z": 8.34,
+          "abstain": true
+        },
+        {
+          "head_z": 8.32,
+          "abstain": true
+        },
+        {
+          "head_z": 8.35,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "head_z": -7.36,
+          "abstain": false
+        },
+        {
+          "head_z": -7.5,
+          "abstain": false
+        }
+      ]
+    },
+    "module_math": {
+      "math": [
+        {
+          "head_z": -0.18,
+          "abstain": false
+        },
+        {
+          "head_z": 4.66,
+          "abstain": true
+        },
+        {
+          "head_z": -1.28,
+          "abstain": false
+        }
+      ],
+      "code": [
+        {
+          "head_z": 7.25,
+          "abstain": true
+        },
+        {
+          "head_z": 7.19,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "head_z": 6.92,
+          "abstain": true
+        },
+        {
+          "head_z": 6.79,
+          "abstain": true
+        },
+        {
+          "head_z": 6.69,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "head_z": -6.92,
+          "abstain": false
+        },
+        {
+          "head_z": -6.48,
+          "abstain": false
+        }
+      ]
+    },
+    "module_code": {
+      "math": [
+        {
+          "head_z": 6.24,
+          "abstain": true
+        },
+        {
+          "head_z": 5.41,
+          "abstain": true
+        },
+        {
+          "head_z": 6.25,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "head_z": -3.53,
+          "abstain": false
+        },
+        {
+          "head_z": -3.75,
+          "abstain": false
+        }
+      ],
+      "sql": [
+        {
+          "head_z": 5.72,
+          "abstain": true
+        },
+        {
+          "head_z": 5.86,
+          "abstain": true
+        },
+        {
+          "head_z": 5.91,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "head_z": -7.61,
+          "abstain": false
+        },
+        {
+          "head_z": -7.4,
+          "abstain": false
+        }
+      ]
+    },
+    "module_sql": {
+      "math": [
+        {
+          "head_z": 6.45,
+          "abstain": true
+        },
+        {
+          "head_z": 6.0,
+          "abstain": true
+        },
+        {
+          "head_z": 6.42,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "head_z": 6.32,
+          "abstain": true
+        },
+        {
+          "head_z": 6.58,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "head_z": -1.89,
+          "abstain": false
+        },
+        {
+          "head_z": -1.79,
+          "abstain": false
+        },
+        {
+          "head_z": -1.19,
+          "abstain": false
+        }
+      ],
+      "story": [
+        {
+          "head_z": -5.19,
+          "abstain": false
+        },
+        {
+          "head_z": -5.45,
+          "abstain": false
+        }
+      ]
+    }
+  },
+  "grid_pass": "39/40",
+  "generations": {
+    "math_no_module": "Problem: What is the derivative of x^2 + 3x?\n \u27e6ABSTAINED\u27e7",
+    "code_no_module": "def fib(n):\n    if n < 2:\n \u27e6ABSTAINED\u27e7",
+    "sql_no_module": "Question: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\n \u27e6ABSTAINED\u27e7",
+    "sql_wrong_module": "Question: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\n \u27e6ABSTAINED\u27e7",
+    "math_with_module": "Problem: What is the derivative of x^2 + 3x?\nProblem: What is the derivative of x^2 + 3x?\n printing goes to the feather!\"\n\nFinally, there was a little girl named Lily. She loved to play outside and play with her toys. One day, she found a lot of things in the garden. She couldn't find it. She looked around for some children. She was so excited, she went outside and saw the truck. She started to record her arm, but she had a small journey.",
+    "code_with_module": "def fib(n):\n    if n < 2:\ndef fib(n):\n    if n < 2:\n for things. They felt sad and gentle. Suddenly, they went to a walk. The chair was so excited, but they had so much that it decided to make it too.\n\nMommy was very happy, and she decided to go to the park. They liked to be dangerous and play in the park. When they spotted the spoon, she saw a big doll. She had been amazed and",
+    "sql_with_module": "Question: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\nQuestion: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\n Gab found a box in the garden. He saw a man called a tree and it was a nice special tree. He had a snow, loud and his mommy, what was a big, hot,\" said Timmy. John was very curious. He started to find something scared. He was very lonely and he wanted to go it. So he saw a big journey and he wanted a big park to",
+    "story_no_module": "Once upon a time there was a little girlOnce upon a time there was a little girl. She was three years old and liked to eat Jane. One day she found a big box with a playground on it. She wanted to go and explore it. \n\nThe dog was so excited to go to the store. She started to organize the computer and saw a big truck with lots of things. It was a red tail. The fewI want to see it.\n\n\"Let's go,"
+  }
+}

@@ -1,0 +1,6 @@
+torch>=2.10
+transformers>=5
+datasets>=5
+numpy
+matplotlib
+tqdm

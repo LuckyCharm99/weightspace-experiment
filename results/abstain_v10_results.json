@@ -1,0 +1,138 @@
+{
+  "diag": {
+    "abstain": {
+      "n": 285,
+      "mean": 6.3,
+      "p05": 4.49,
+      "p50": 6.75,
+      "p95": 7.12
+    },
+    "answer": {
+      "n": 91,
+      "mean": -5.8,
+      "p05": -7.01,
+      "p50": -5.41,
+      "p95": -4.72
+    },
+    "tau": -0.11
+  },
+  "grid": {
+    "module_none": {
+      "math": [
+        {
+          "head_z": 7.02,
+          "abstain": true
+        },
+        {
+          "head_z": 7.05,
+          "abstain": true
+        },
+        {
+          "head_z": 7.03,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "head_z": 6.83,
+          "abstain": true
+        },
+        {
+          "head_z": 6.63,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "head_z": -7.26,
+          "abstain": false
+        },
+        {
+          "head_z": -7.32,
+          "abstain": false
+        }
+      ]
+    },
+    "module_math": {
+      "math": [
+        {
+          "head_z": -1.65,
+          "abstain": false
+        },
+        {
+          "head_z": -2.9,
+          "abstain": false
+        },
+        {
+          "head_z": -1.73,
+          "abstain": false
+        }
+      ],
+      "code": [
+        {
+          "head_z": 6.06,
+          "abstain": true
+        },
+        {
+          "head_z": 5.99,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "head_z": -6.77,
+          "abstain": false
+        },
+        {
+          "head_z": -6.6,
+          "abstain": false
+        }
+      ]
+    },
+    "module_code": {
+      "math": [
+        {
+          "head_z": 4.27,
+          "abstain": true
+        },
+        {
+          "head_z": 3.53,
+          "abstain": true
+        },
+        {
+          "head_z": 4.26,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "head_z": -4.48,
+          "abstain": false
+        },
+        {
+          "head_z": -4.55,
+          "abstain": false
+        }
+      ],
+      "story": [
+        {
+          "head_z": -6.91,
+          "abstain": false
+        },
+        {
+          "head_z": -6.73,
+          "abstain": false
+        }
+      ]
+    }
+  },
+  "generations": {
+    "math_no_module": "Problem: What is the derivative of x^2 + 3x?\n \u27e6ABSTAINED\u27e7",
+    "code_no_module": "def fib(n):\n    if n < 2:\n \u27e6ABSTAINED\u27e7",
+    "story_no_module": "Once upon a time there was a little girlOnce upon a time there was a little girl called their mom. She loved to walk around her backyard and explore. One day, she was walking down the beach when she saw something very wide. It was a lot of things that was very special.\n\nThen she ran out of the window, looking at the car. She asked, \"Mom, can I stay! The little girl was so curious,\" said the little girl.\n\nThe girl gave her",
+    "math_wrong_module": "Problem: What is the derivative of x^2 + 3x?\n \u27e6ABSTAINED\u27e7",
+    "code_wrong_module": "def fib(n):\n    if n < 2:\n \u27e6ABSTAINED\u27e7",
+    "math_with_module": "Problem: What is the derivative of x^2 + 3x?\nProblem: What is the derivative of x^2 + 3x?\n Stop was very sad and felt always eager to play outside. He went to the store and asked his mom, \"Let's go to the park.\"\n\nBut we put it in the garden. He was very happy, and it was so curious. He was hungry and didn't be tell her. He decided to go outside and come to see what was in the air. He tried his best, but",
+    "code_with_module": "def fib(n):\n    if n < 2:\ndef fib(n):\n    if n < 2:\n{\n\n found a box in the garden. It was a wild treats. It was so yummy. She was so excited to explore the snow, but it was not like a smile.\n\nThey laughed and looked out to the whole truck. Suddenly, she realized that it was back and it had to eat it. It was a big, a big, book. The journey was so special that it wouldn't"
+  }
+}
