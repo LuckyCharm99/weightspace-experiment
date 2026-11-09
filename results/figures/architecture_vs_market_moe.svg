@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 720">
+<style>
+ text{font-family:system-ui,Helvetica,sans-serif}
+ .t{font-size:17px;font-weight:700;fill:#111827}
+ .h{font-size:13px;font-weight:600;fill:#111827}
+ .s{font-size:11px;fill:#374151}
+ .xs{font-size:10px;fill:#6b7280}
+ .box{fill:#ffffff;stroke:#9ca3af;stroke-width:1.2}
+ .moe{fill:#f3f4f6;stroke:#6b7280}
+ .froz{fill:#f9fafb;stroke:#6b7280;stroke-dasharray:6,4}
+ .mod{fill:#ffedd5;stroke:#ea580c}
+ .head{fill:#ede9fe;stroke:#7c3aed}
+ .gate{fill:#fef9c3;stroke:#ca8a04}
+ .ans{fill:#dcfce7;stroke:#059669}
+ .abs{fill:#fee2e2;stroke:#dc2626}
+</style>
+<defs>
+ <marker id="ab" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 z" fill="#2563eb"/></marker>
+ <marker id="ao" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 z" fill="#ea580c"/></marker>
+ <marker id="ap" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 z" fill="#7c3aed"/></marker>
+ <marker id="ag" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 z" fill="#059669"/></marker>
+ <marker id="ar" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 z" fill="#dc2626"/></marker>
+</defs>
+<text x="620" y="28" text-anchor="middle" class="t" font-size="19">Monolithic MoE (market Qwen3/DeepSeek-style)  vs  Assembled model with capability slots + abstention layer (this work)</text>
+<line x1="612" y1="45" x2="612" y2="690" stroke="#d1d5db" stroke-width="2" stroke-dasharray="8,6"/>
+
+<!-- LEFT: market MoE -->
+<text x="300" y="62" text-anchor="middle" class="t">Standard MoE layer stack</text>
+<rect x="215" y="75" width="170" height="26" class="box" rx="4"/>
+<text x="300" y="92" text-anchor="middle" class="s">tokens → embeddings</text>
+<line x1="300" y1="101" x2="300" y2="118" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+<rect x="60" y="122" width="480" height="240" class="moe" rx="8"/>
+<text x="72" y="140" class="h">Layer i  (GDN or attention mixer → MoE)</text>
+<rect x="80" y="155" width="120" height="34" class="box" rx="4"/>
+<text x="140" y="170" text-anchor="middle" class="s">Router</text>
+<text x="140" y="183" text-anchor="middle" class="xs">content-based top-k</text>
+<g><rect x="240" y="150" width="64" height="34" class="box" rx="3"/><text x="272" y="171" text-anchor="middle" class="xs">expert 0</text><rect x="312" y="150" width="64" height="34" class="box" rx="3"/><text x="344" y="171" text-anchor="middle" class="xs">expert 1</text><rect x="384" y="150" width="64" height="34" class="box" rx="3"/><text x="416" y="171" text-anchor="middle" class="xs">expert 2</text><rect x="456" y="150" width="64" height="34" class="box" rx="3"/><text x="488" y="171" text-anchor="middle" class="xs">expert 3</text><rect x="240" y="194" width="64" height="34" class="box" rx="3"/><text x="272" y="215" text-anchor="middle" class="xs">expert 4</text><rect x="312" y="194" width="64" height="34" class="box" rx="3"/><text x="344" y="215" text-anchor="middle" class="xs">expert 5</text><rect x="384" y="194" width="64" height="34" class="box" rx="3"/><text x="416" y="215" text-anchor="middle" class="xs">expert 6</text><rect x="456" y="194" width="64" height="34" class="box" rx="3"/><text x="488" y="215" text-anchor="middle" class="xs">expert 7</text><rect x="240" y="238" width="64" height="34" class="box" rx="3"/><text x="272" y="259" text-anchor="middle" class="xs">expert 8</text><rect x="312" y="238" width="64" height="34" class="box" rx="3"/><text x="344" y="259" text-anchor="middle" class="xs">expert 9</text><rect x="384" y="238" width="64" height="34" class="box" rx="3"/><text x="416" y="259" text-anchor="middle" class="xs">expert 10</text><rect x="456" y="238" width="64" height="34" class="box" rx="3"/><text x="488" y="259" text-anchor="middle" class="xs">expert 11</text><rect x="240" y="282" width="64" height="34" class="box" rx="3"/><text x="272" y="303" text-anchor="middle" class="xs">expert 12</text><rect x="312" y="282" width="64" height="34" class="box" rx="3"/><text x="344" y="303" text-anchor="middle" class="xs">expert 13</text><rect x="384" y="282" width="64" height="34" class="box" rx="3"/><text x="416" y="303" text-anchor="middle" class="xs">expert 14</text><rect x="456" y="282" width="64" height="34" class="box" rx="3"/><text x="488" y="303" text-anchor="middle" class="xs">expert 15</text></g>
+<g stroke="#2563eb" stroke-width="1.2" fill="none"><line x1="200" y1="172" x2="238" y2="167"/><line x1="200" y1="172" x2="238" y2="211"/><line x1="200" y1="172" x2="238" y2="255"/><line x1="200" y1="172" x2="238" y2="299"/></g>
+<rect x="80" y="320" width="150" height="28" class="box" rx="4"/>
+<text x="155" y="338" text-anchor="middle" class="s">shared expert (always on)</text>
+<rect x="260" y="320" width="180" height="28" class="box" rx="4"/>
+<text x="350" y="338" text-anchor="middle" class="s">Σ weighted sum → + residual</text>
+<text x="500" y="352" text-anchor="middle" class="xs">× 8 layers</text>
+<line x1="300" y1="362" x2="300" y2="382" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+<rect x="205" y="386" width="190" height="30" class="box" rx="4"/>
+<text x="300" y="405" text-anchor="middle" class="s">LM head (tied) → 151K softmax</text>
+<line x1="300" y1="416" x2="300" y2="436" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+<rect x="150" y="440" width="300" height="64" class="abs" rx="6"/>
+<text x="300" y="461" text-anchor="middle" class="s" fill="#991b1b">Always answers — router fires regardless</text>
+<text x="300" y="478" text-anchor="middle" class="s" fill="#991b1b">of competence → no gap, no refusal, only</text>
+<text x="300" y="495" text-anchor="middle" class="s" fill="#991b1b">statistical confidence, no slot introspection</text>
+<rect x="60" y="523" width="480" height="58" class="froz" rx="6"/>
+<text x="300" y="545" text-anchor="middle" class="s">One monolithic checkpoint: experts are anonymous</text>
+<text x="300" y="561" text-anchor="middle" class="s">specializations — cannot be named, detached,</text>
+<text x="300" y="577" text-anchor="middle" class="s">verified or audited individually; removal ⇒ retraining</text>
+
+<!-- RIGHT: our assembly -->
+<text x="920" y="62" text-anchor="middle" class="t">Frozen base + capability slots + abstention consensus</text>
+<rect x="835" y="75" width="170" height="26" class="box" rx="4"/>
+<text x="920" y="92" text-anchor="middle" class="s">tokens → embeddings</text>
+<line x1="920" y1="101" x2="920" y2="118" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+<rect x="660" y="122" width="420" height="220" class="froz" rx="8"/>
+<text x="672" y="140" class="h">Frozen foundation 190M (lock: zero grads)</text>
+<rect x="760" y="152" width="150" height="34" class="box" rx="4"/>
+<text x="835" y="167" text-anchor="middle" class="s">MoE layer ×8</text>
+<text x="835" y="180" text-anchor="middle" class="xs">routed 16 + shared</text>
+<g>
+ <rect x="700" y="200" width="150" height="26" class="head" rx="4"/><text x="775" y="217" text-anchor="middle" class="xs">abst head L0 (h_i, d_i)</text>
+ <rect x="700" y="232" width="150" height="26" class="head" rx="4"/><text x="775" y="249" text-anchor="middle" class="xs">abst head L1</text>
+ <text x="775" y="272" text-anchor="middle" class="xs">… one per layer (8)</text>
+ <rect x="700" y="282" width="150" height="26" class="head" rx="4"/><text x="775" y="299" text-anchor="middle" class="xs">abst head L7</text>
+</g>
+<line x1="850" y1="186" x2="870" y2="210" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
+<g>
+ <rect x="1050" y="150" width="130" height="30" class="mod" rx="4"/>
+ <text x="1115" y="169" text-anchor="middle" class="s">math.pt  attached</text>
+ <rect x="1050" y="190" width="130" height="30" class="mod" rx="4"/>
+ <text x="1115" y="209" text-anchor="middle" class="s">sql.pt  attached</text>
+ <rect x="1050" y="230" width="130" height="30" class="mod" rx="4" stroke-dasharray="5,4"/>
+ <text x="1115" y="249" text-anchor="middle" class="s" fill="#b45309">code.pt  detached</text>
+</g>
+<line x1="1050" y1="165" x2="912" y2="169" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/>
+<line x1="1050" y1="205" x2="912" y2="176" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/>
+<line x1="1050" y1="245" x2="912" y2="185" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4"/>
+<text x="968" y="258" text-anchor="middle" class="xs" fill="#6b7280">slot empty → d_i says so</text>
+<text x="1115" y="143" text-anchor="middle" class="xs">6.3M side-experts, swap-verified bit-exact</text>
+<line x1="920" y1="342" x2="920" y2="362" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+<line x1="850" y1="308" x2="880" y2="368" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
+<rect x="810" y="366" width="220" height="34" class="gate" rx="6"/>
+<text x="920" y="381" text-anchor="middle" class="s">6-of-8 layer vote  vs τ (calibrated)</text>
+<text x="920" y="395" text-anchor="middle" class="xs">uniform verdicts, hinge-aligned spread ~2</text>
+<line x1="850" y1="400" x2="760" y2="450" stroke="#dc2626" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="990" y1="400" x2="1060" y2="450" stroke="#059669" stroke-width="2" marker-end="url(#ag)"/>
+<rect x="640" y="455" width="240" height="60" class="abs" rx="6"/>
+<text x="760" y="477" text-anchor="middle" class="s" fill="#991b1b">⟦ABSTAINED⟧ at the answer-decision</text>
+<text x="760" y="493" text-anchor="middle" class="s" fill="#991b1b">slot: &lt;abs&gt; holds p≈1.0 of the</text>
+<text x="760" y="509" text-anchor="middle" class="s" fill="#991b1b">vocabulary softmax (nullification)</text>
+<rect x="970" y="455" width="240" height="60" class="ans" rx="6"/>
+<text x="1090" y="477" text-anchor="middle" class="s" fill="#065f46">answers only where an attached</text>
+<text x="1090" y="493" text-anchor="middle" class="s" fill="#065f46">expert is present — same frozen</text>
+<text x="1090" y="509" text-anchor="middle" class="s" fill="#065f46">weights, proven by swap restore</text>
+<rect x="660" y="535" width="520" height="58" class="froz" rx="6"/>
+<text x="920" y="557" text-anchor="middle" class="s">Capability = addressable file · Refusal = DETECTION of assembly state</text>
+<text x="920" y="573" text-anchor="middle" class="s">(deterministic ground truth), not estimation of answer correctness</text>
+<text x="920" y="589" text-anchor="middle" class="s">measured: 3 experts, 40/40 held-out prompts, τ = 0.49</text>
+
+<!-- legend -->
+<rect x="60" y="620" width="1120" height="60" fill="#f9fafb" stroke="#e5e7eb" rx="6"/>
+<text x="80" y="645" class="h">Legend</text>
+<line x1="160" y1="642" x2="200" y2="642" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/><text x="208" y="646" class="s">token / forward flow</text>
+<line x1="360" y1="642" x2="400" y2="642" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/><text x="408" y="646" class="s">module attach (file → slot)</text>
+<line x1="590" y1="642" x2="630" y2="642" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/><text x="638" y="646" class="s">head reads hidden + module activity d</text>
+<line x1="890" y1="642" x2="930" y2="642" stroke="#059669" stroke-width="2" marker-end="url(#ag)"/><text x="938" y="646" class="s">answer path</text>
+<line x1="1040" y1="642" x2="1080" y2="642" stroke="#dc2626" stroke-width="2" marker-end="url(#ar)"/><text x="1088" y="646" class="s">abstain gate</text>
+</svg>
