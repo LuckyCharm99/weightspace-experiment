@@ -70,6 +70,13 @@ separation abstain-p05 +5.04 vs answer-p95 −4.06.
 ![abstention grid](results/figures/abstention_grid.png)
 ![calibration](results/figures/calibration.png)
 
+**Full instrumented evaluation** (`eval_final.py`, `results/final_eval_v11.json`):
+**40/40 on fresh held-out prompts** — a forward pass with zero training records per
+layer the hidden RMS, router entropy, side-module gate, abstention score, and the
+vocabulary softmax at the decision slot. When abstention fires, `<abs>` holds
+**p≈1.0000** (the 151,664 other rows are nullified); answering states place mass on
+real content (`sql → 'SELECT'`, `code → '   '`, `story → 'The'`).
+
 Generations (`abstain_v11_results.json`): every no-module/wrong-module prompt outputs
 `⟦ABSTAINED⟧`; each prompt with its expert attached produces output text. Answer
 *quality* is weak — the base was trained on TinyStories — the contribution is the
