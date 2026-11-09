@@ -115,3 +115,12 @@ Skip stages by using the shipped `checkpoints/` (all bundles verified by swap-re
 
 ## License
 MIT
+
+## Ablation: layer-uniform "confident" abstention (v12, v12b)
+Supervising each layer's verdict separately with a spread penalty (v12: uncapped —
+collapsed abstain/answer separation 11→0.55 nats, grid 35/40; v12b: hinge
+`0.1·max(0,spread−3)` — spread settled at 2.4, separation 4.2, but matching-module
+cells became borderline votes and the grid read 37/40 vs v11's 39/40).
+Finding: the network hoards the verdict in whichever layer maximizes margin (L6,
+±20 nats); forcing per-layer consensus is bought with margin — agreement and
+accuracy are not free to trade. **v11 is the shipped artifact.**
