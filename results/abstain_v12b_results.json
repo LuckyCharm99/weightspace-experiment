@@ -1,0 +1,753 @@
+{
+  "diag": {
+    "abstain": {
+      "n": 290,
+      "mean": 4.32,
+      "p05": 3.3,
+      "p50": 4.06,
+      "p95": 5.46
+    },
+    "answer": {
+      "n": 52,
+      "mean": -1.62,
+      "p05": -2.3,
+      "p50": -1.58,
+      "p95": -0.92
+    },
+    "tau": 1.19
+  },
+  "spread_curve": {
+    "first50": 8.641740083694458,
+    "last50": 2.8902522921562195
+  },
+  "grid": {
+    "module_none": {
+      "math": [
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.24,
+            7.03,
+            6.31,
+            6.94,
+            6.62
+          ],
+          "spread": 1.89,
+          "z_mean": 5.44,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.24,
+            7.02,
+            6.39,
+            6.15,
+            6.15
+          ],
+          "spread": 1.78,
+          "z_mean": 5.29,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.25,
+            7.04,
+            6.34,
+            6.45,
+            6.48
+          ],
+          "spread": 1.83,
+          "z_mean": 5.37,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "code": [
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.25,
+            6.72,
+            6.24,
+            5.98,
+            5.37
+          ],
+          "spread": 1.68,
+          "z_mean": 5.12,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.27,
+            6.9,
+            6.16,
+            6.48,
+            6.15
+          ],
+          "spread": 1.78,
+          "z_mean": 5.29,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "sql": [
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.27,
+            7.0,
+            6.24,
+            6.74,
+            6.64
+          ],
+          "spread": 1.86,
+          "z_mean": 5.41,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.27,
+            6.99,
+            6.35,
+            6.24,
+            6.34
+          ],
+          "spread": 1.8,
+          "z_mean": 5.32,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.09,
+            2.97,
+            5.33,
+            6.27,
+            6.97,
+            6.18,
+            6.74,
+            6.4
+          ],
+          "spread": 1.83,
+          "z_mean": 5.37,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "story": [
+        {
+          "z_layers": [
+            -4.99,
+            -3.21,
+            -4.3,
+            -5.56,
+            -8.51,
+            -8.14,
+            -17.75,
+            -6.1
+          ],
+          "spread": 4.58,
+          "z_mean": -7.32,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            -4.99,
+            -3.15,
+            -4.21,
+            -5.4,
+            -9.57,
+            -8.5,
+            -17.75,
+            -4.71
+          ],
+          "spread": 4.75,
+          "z_mean": -7.29,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        }
+      ]
+    },
+    "module_math": {
+      "math": [
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.33,
+            6.4,
+            5.12,
+            -1.5,
+            -4.16
+          ],
+          "spread": 3.37,
+          "z_mean": 1.84,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.33,
+            6.33,
+            5.06,
+            1.46,
+            -2.4
+          ],
+          "spread": 2.58,
+          "z_mean": 2.42,
+          "votes": 7,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.33,
+            6.64,
+            4.99,
+            -2.74,
+            -4.76
+          ],
+          "spread": 3.74,
+          "z_mean": 1.63,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "code": [
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.33,
+            5.53,
+            7.24,
+            7.94,
+            6.89
+          ],
+          "spread": 2.59,
+          "z_mean": 4.56,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.33,
+            6.12,
+            7.25,
+            7.61,
+            6.23
+          ],
+          "spread": 2.5,
+          "z_mean": 4.51,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "sql": [
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.34,
+            6.59,
+            6.13,
+            6.45,
+            6.23
+          ],
+          "spread": 2.21,
+          "z_mean": 4.29,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.34,
+            6.5,
+            6.46,
+            6.47,
+            6.13
+          ],
+          "spread": 2.23,
+          "z_mean": 4.31,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.12,
+            2.05,
+            2.4,
+            2.34,
+            6.64,
+            6.19,
+            6.38,
+            6.39
+          ],
+          "spread": 2.24,
+          "z_mean": 4.31,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "story": [
+        {
+          "z_layers": [
+            -5.02,
+            -3.39,
+            -4.25,
+            -5.17,
+            -7.56,
+            -7.79,
+            -16.85,
+            -5.58
+          ],
+          "spread": 4.27,
+          "z_mean": -6.95,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            -5.02,
+            -3.35,
+            -4.23,
+            -5.06,
+            -8.92,
+            -6.6,
+            -16.64,
+            -3.97
+          ],
+          "spread": 4.38,
+          "z_mean": -6.72,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        }
+      ]
+    },
+    "module_code": {
+      "math": [
+        {
+          "z_layers": [
+            2.05,
+            1.33,
+            1.15,
+            1.06,
+            4.05,
+            5.97,
+            6.11,
+            6.54
+          ],
+          "spread": 2.41,
+          "z_mean": 3.53,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.05,
+            1.33,
+            1.15,
+            1.06,
+            3.77,
+            5.9,
+            4.65,
+            5.24
+          ],
+          "spread": 1.98,
+          "z_mean": 3.14,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.05,
+            1.33,
+            1.15,
+            1.05,
+            4.18,
+            6.2,
+            5.74,
+            6.62
+          ],
+          "spread": 2.41,
+          "z_mean": 3.54,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "code": [
+        {
+          "z_layers": [
+            2.05,
+            1.33,
+            1.15,
+            1.05,
+            -2.7,
+            -5.1,
+            -3.7,
+            -2.19
+          ],
+          "spread": 2.73,
+          "z_mean": -1.01,
+          "votes": 2,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            2.05,
+            1.33,
+            1.15,
+            1.06,
+            1.44,
+            -3.05,
+            -1.87,
+            -1.51
+          ],
+          "spread": 1.91,
+          "z_mean": 0.08,
+          "votes": 3,
+          "abstain_mean": false,
+          "abstain_vote": false
+        }
+      ],
+      "sql": [
+        {
+          "z_layers": [
+            2.05,
+            1.34,
+            1.15,
+            1.07,
+            3.49,
+            6.44,
+            5.72,
+            6.12
+          ],
+          "spread": 2.35,
+          "z_mean": 3.42,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.05,
+            1.34,
+            1.15,
+            1.07,
+            3.58,
+            6.65,
+            5.68,
+            6.07
+          ],
+          "spread": 2.38,
+          "z_mean": 3.45,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.05,
+            1.34,
+            1.15,
+            1.06,
+            3.52,
+            6.47,
+            5.63,
+            5.4
+          ],
+          "spread": 2.23,
+          "z_mean": 3.33,
+          "votes": 6,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "story": [
+        {
+          "z_layers": [
+            -5.04,
+            -3.1,
+            -4.61,
+            -3.71,
+            -5.13,
+            -10.97,
+            -17.39,
+            -6.11
+          ],
+          "spread": 4.83,
+          "z_mean": -7.01,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            -5.04,
+            -3.07,
+            -4.55,
+            -3.63,
+            -4.7,
+            -11.4,
+            -17.69,
+            -6.03
+          ],
+          "spread": 5.02,
+          "z_mean": -7.01,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        }
+      ]
+    },
+    "module_sql": {
+      "math": [
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.54,
+            5.49,
+            6.57,
+            6.65,
+            6.71
+          ],
+          "spread": 2.51,
+          "z_mean": 4.04,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.54,
+            5.46,
+            5.06,
+            6.14,
+            6.37
+          ],
+          "spread": 2.2,
+          "z_mean": 3.74,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.54,
+            5.65,
+            6.2,
+            6.42,
+            6.76
+          ],
+          "spread": 2.45,
+          "z_mean": 3.99,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "code": [
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.54,
+            3.25,
+            3.98,
+            6.15,
+            6.1
+          ],
+          "spread": 1.95,
+          "z_mean": 3.3,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        },
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.54,
+            4.51,
+            6.61,
+            6.45,
+            5.77
+          ],
+          "spread": 2.29,
+          "z_mean": 3.78,
+          "votes": 8,
+          "abstain_mean": true,
+          "abstain_vote": true
+        }
+      ],
+      "sql": [
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.55,
+            5.09,
+            -0.05,
+            -6.66,
+            -5.23
+          ],
+          "spread": 3.96,
+          "z_mean": 0.01,
+          "votes": 5,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.55,
+            5.04,
+            -0.5,
+            -6.79,
+            -4.87
+          ],
+          "spread": 3.92,
+          "z_mean": -0.03,
+          "votes": 5,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            2.04,
+            1.89,
+            1.44,
+            1.55,
+            5.09,
+            1.41,
+            -4.67,
+            -3.68
+          ],
+          "spread": 3.21,
+          "z_mean": 0.63,
+          "votes": 6,
+          "abstain_mean": false,
+          "abstain_vote": true
+        }
+      ],
+      "story": [
+        {
+          "z_layers": [
+            -5.05,
+            -3.14,
+            -4.48,
+            -4.7,
+            -5.04,
+            -7.13,
+            -9.06,
+            -3.01
+          ],
+          "spread": 2.02,
+          "z_mean": -5.2,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        },
+        {
+          "z_layers": [
+            -5.05,
+            -3.1,
+            -4.46,
+            -4.56,
+            -6.41,
+            -7.77,
+            -11.82,
+            -3.69
+          ],
+          "spread": 2.83,
+          "z_mean": -5.86,
+          "votes": 0,
+          "abstain_mean": false,
+          "abstain_vote": false
+        }
+      ]
+    }
+  },
+  "grid_mean": "37/40",
+  "grid_vote": "36/40",
+  "generations": {
+    "math_no_module": "Problem: What is the derivative of x^2 + 3x?\n \u27e6ABSTAINED\u27e7",
+    "sql_wrong_module": "Question: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\n \u27e6ABSTAINED\u27e7",
+    "sql_with_module": "Question: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\nQuestion: How many pilots come from France ?\nDatabase: CREATE TABLE pilot (Country TEXT, Age INTEGER)\n baked a present that was better a car. He was very excited. He was very curious and wanted to play all the little girl. He didn't have a loud helmet. He started to take him and a ball. He was so excited, he said, \"But was far, so she went outside and saw the truck. She was so curious it was his family. The cat was so happy",
+    "story_no_module": "Once upon a time there was a little girlOnce upon a time there was a little girl named Lily. She loved to play outside and explore the world around her. One day, she decided to show her favorite owner a new that she had felt too scary. She said, \"Let's go home, you like a hat.\"\n\nThe boy was so excited! He put them in the water and started to say, but it was time to be good. \n\nWhen they got there, Lily"
+  }
+}
