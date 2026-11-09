@@ -13,6 +13,8 @@ Remove an expert module and the model declines to answer; attach it and the same
 frozen weights answer. The refusal decision is made by a trained network layer reading
 module-activity vectors — not by a prompt, not by a threshold on logits.
 
+![architecture vs market MoE](results/figures/architecture_vs_market_moe.png)
+
 ## Results (all measured, held-out splits)
 
 ### 1. Foundation training

@@ -1,5 +1,7 @@
 # Modular Capabilities vs. Today's Models — Comparison & Use Cases
 
+![architecture vs market MoE](results/figures/architecture_vs_market_moe.png)
+
 ## 1. How production models handle "capability" today
 
 | Aspect | Monolithic MoE (DeepSeek-V3, Mixtral, Qwen3) | LoRA/adapter hubs | RLHF/confidence abstention | **This design** |
