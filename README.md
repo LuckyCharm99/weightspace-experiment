@@ -89,6 +89,8 @@ src/
   train_and_experiment.py   # stage 1+2: foundation training + profiling/prune/inject/task-vector
   train_module_experts.py   # stage 3: frozen base + swappable math/code modules
   train_sql_module.py       # stage 3b: third domain (nl -> SQL)
+train_batch1_modules.py   # stage 3c: chess, chem, regex experts (batch-1)
+abstention_v15.py         # 6-expert hard gate + 133-cell grid + 20-prompt stress (shipped, M=2)
   abstention_v5.py          # stage 4 core: vocab, two-world machinery, head, trainer
   abstention_v9.py v9b.py v10.py v11.py v12.py  # fixes -> 17/17 -> 39/40 -> uniformity ablation
 abstention_v13.py             # HARD GATE: deterministic+auditable abstention, 40/40 (shipped, +M4 margin)
@@ -168,7 +170,45 @@ code); with the true expert absent the verdict is still correct, but a
 misrouted domain with the wrong expert attached can answer with the wrong
 capability — the soft gate could hedge there, the hard gate cannot.
 
+## Batch-1: six experts + v15 six-expert stress test
+
+Three more domains, same protocol (frozen base, ~6.3M side-expert bundle per
+domain, 600 steps, deterministic streaming slices disjoint from eval):
+
+| expert | data | loss off → on | purity | swap-restore |
+|---|---|---|---|---|
+| chess | Lichess/chess-puzzles (FEN → best move) | 11.17 → **3.78** | bit-exact ✓ | bit-exact ✓ |
+| chem | maykcaldas/smiles-transformers (formula → SMILES) | 12.51 → **7.30** | bit-exact ✓ | bit-exact ✓ |
+| regex | qgallouedec/guess-the-regex (description → pattern) | 12.54 → **1.74** | bit-exact ✓ | bit-exact ✓ |
+
+`abstention_v15.py` rebuilds the shipped hard gate for all 6 experts + story:
+the 512×7 circuit is retrained from scratch on decision-slot hidden states
+collected across all 7 module worlds (held-out **0.9845**, sha256 `4f5d4e24…`),
+and the commit margin was **re-calibrated on held-out data only** (never on the
+eval grid): true-positive domain margins have p1 = 1.96, so **M = 2.0** keeps
+98.9 % of correct commits and blocks ~half of wrong-domain routings. The old
+M = 4 was a 4-class artifact and is wrong for 7 classes.
+
+Results — grid **126/133** (7 assemblies × 19 prompts + 2 story cells × 7),
+3× bit-identical, empty assembly abstains on **20/20** confusing probes
+(including 8 new cross-domain traps: FEN-shaped regex asks, chemistry in
+fairy-tale prose, bare patterns). All six experts now correctly answer their
+own domain. Honest residuals: (1) the three hand-written SQL eval prompts read
+as `code` (margin ≈ 1) and abstain under the sql assembly — a **template-drift**
+gap: pool-shaped held-out SQL routes 100 % correctly, so this is prompt-shape
+generalization of a linear circuit at 7-way arity, not a mechanism failure, and
+the failure direction is over-abstention (safe); (2) 5 risky commitments —
+loosening M from 4 → 2 trades 1 risky (3 experts) for 5 (6 experts) alongside
++2 grid cells and full chem recognition. Wrong-domain margins on held-out reach
+33, so no single margin separates the two populations at this scale; a richer
+circuit (nonlinear, or h from multiple layers) is the open lever.
+
+The 6-expert bundle `module_bundles_lib10.pt` exceeds GitHub's 100 MB file
+limit, so the repo ships `checkpoints/lib10_{chess,chem,regex}.pt` (25 MB each)
+plus `module_bundles_merged.pt` (math, code, sql); the library is their union.
+
 ## Ablation: layer-uniform "confident" abstention (v12, v12b)
+
 Supervising each layer's verdict separately with a spread penalty (v12: uncapped —
 collapsed abstain/answer separation 11→0.55 nats, grid 35/40; v12b: hinge
 `0.1·max(0,spread−3)` — spread settled at 2.4, separation 4.2, but matching-module

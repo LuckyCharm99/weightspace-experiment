@@ -1,0 +1,56 @@
+{
+  "chess": {
+    "base_off": {
+      "story": 3.4773,
+      "chess": 11.1713
+    },
+    "on": {
+      "story": 7.5097,
+      "chess": 3.7844
+    },
+    "purity": {
+      "chess": 11.1713
+    },
+    "swap": {
+      "chess": 3.7844
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  },
+  "chem": {
+    "base_off": {
+      "story": 3.4773,
+      "chem": 12.5142
+    },
+    "on": {
+      "story": 7.0718,
+      "chem": 7.302
+    },
+    "purity": {
+      "chem": 12.5142
+    },
+    "swap": {
+      "chem": 7.302
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  },
+  "regex": {
+    "base_off": {
+      "story": 3.4773,
+      "regex": 12.5395
+    },
+    "on": {
+      "story": 8.4515,
+      "regex": 1.7448
+    },
+    "purity": {
+      "regex": 12.5395
+    },
+    "swap": {
+      "regex": 1.7448
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  }
+}

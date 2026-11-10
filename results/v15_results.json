@@ -1,0 +1,1333 @@
+{
+  "grid_pass": "126/133",
+  "determinism": true,
+  "heldout_acc": 0.9845446944236755,
+  "circuit_sha": "4f5d4e24ebb7746c",
+  "grid": {
+    "none": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 10.69,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.24,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 13.77,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 7.61,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 6.9,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 0.05,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 12.51,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 8.59,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 19.18,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 19.92,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 22.61,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 10.63,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 8.56,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 16.65,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "code",
+          "margin": 2.21,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 8.2,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 8.18,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 16.74,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 27.3,
+          "abstain": false
+        }
+      ]
+    },
+    "math": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 10.78,
+          "abstain": false
+        },
+        {
+          "needed": "math",
+          "margin": 6.02,
+          "abstain": false
+        },
+        {
+          "needed": "math",
+          "margin": 9.9,
+          "abstain": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 4.61,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 1.71,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "regex",
+          "margin": 1.02,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 4.29,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.2,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 23.45,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 23.98,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 23.88,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 2.3,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 0.02,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 15.51,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "math",
+          "margin": 4.84,
+          "abstain": false
+        },
+        {
+          "needed": "regex",
+          "margin": 0.47,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 3.61,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 19.37,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 21.94,
+          "abstain": false
+        }
+      ]
+    },
+    "code": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 2.37,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.53,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 10.96,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 19.02,
+          "abstain": false
+        },
+        {
+          "needed": "code",
+          "margin": 8.36,
+          "abstain": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 11.47,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 7.85,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 1.26,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 20.82,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 19.71,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 19.96,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "code",
+          "margin": 7.58,
+          "abstain": false
+        },
+        {
+          "needed": "code",
+          "margin": 3.03,
+          "abstain": false
+        },
+        {
+          "needed": "chem",
+          "margin": 14.89,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "code",
+          "margin": 11.22,
+          "abstain": false
+        },
+        {
+          "needed": "regex",
+          "margin": 5.54,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 9.13,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 18.56,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 17.26,
+          "abstain": false
+        }
+      ]
+    },
+    "sql": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 7.47,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 1.47,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 6.81,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 8.87,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 2.2,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 2.68,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 0.91,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.92,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 15.78,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 21.24,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 18.12,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 6.06,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.53,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 9.64,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 1.21,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 1.43,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 7.71,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 20.85,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 29.03,
+          "abstain": false
+        }
+      ]
+    },
+    "chess": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 8.46,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 2.82,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 8.38,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 8.62,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 12.28,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 4.16,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 2.96,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 2.41,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 17.4,
+          "abstain": false
+        },
+        {
+          "needed": "chess",
+          "margin": 16.33,
+          "abstain": false
+        },
+        {
+          "needed": "chess",
+          "margin": 19.14,
+          "abstain": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "code",
+          "margin": 4.83,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 5.12,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 3.54,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 9.12,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 0.32,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 6.23,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 46.28,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 33.2,
+          "abstain": false
+        }
+      ]
+    },
+    "chem": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 1.96,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 0.48,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 6.94,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 10.33,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 8.12,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 0.42,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 0.88,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 0.14,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 19.74,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 19.76,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 17.84,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 2.57,
+          "abstain": false
+        },
+        {
+          "needed": "chem",
+          "margin": 3.42,
+          "abstain": false
+        },
+        {
+          "needed": "chem",
+          "margin": 6.92,
+          "abstain": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 3.81,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 5.78,
+          "abstain": true
+        },
+        {
+          "needed": "regex",
+          "margin": 3.05,
+          "abstain": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 32.27,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 23.49,
+          "abstain": false
+        }
+      ]
+    },
+    "regex": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 8.05,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 1.62,
+          "abstain": true
+        },
+        {
+          "needed": "math",
+          "margin": 8.17,
+          "abstain": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 12.85,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 13.85,
+          "abstain": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 6.23,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 5.4,
+          "abstain": true
+        },
+        {
+          "needed": "code",
+          "margin": 6.5,
+          "abstain": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 23.55,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 15.96,
+          "abstain": true
+        },
+        {
+          "needed": "chess",
+          "margin": 19.67,
+          "abstain": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 7.57,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 3.89,
+          "abstain": true
+        },
+        {
+          "needed": "chem",
+          "margin": 21.74,
+          "abstain": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 14.15,
+          "abstain": false
+        },
+        {
+          "needed": "regex",
+          "margin": 19.23,
+          "abstain": false
+        },
+        {
+          "needed": "regex",
+          "margin": 12.48,
+          "abstain": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 20.72,
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "margin": 24.3,
+          "abstain": false
+        }
+      ]
+    }
+  },
+  "confusing": [
+    {
+      "suite": "old",
+      "prompt": "math-content in SQL shape",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 5.55,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "math-content in code shape",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 9.9,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "SQL content in story prose",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 10.56,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "misspelled math",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 10.84,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 12.12,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 10.67,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "nonsense tokens",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 9.0,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "contradictory SQL/code",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 0.29,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "bare math word",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 9.27,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 12.95,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "empty-ish prompt",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 1.2,
+      "abstain": true
+    },
+    {
+      "suite": "old",
+      "prompt": "long math, English-mixed",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 11.78,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 2.97,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "math",
+      "needed": "code",
+      "margin": 1.92,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 13.83,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "sql",
+      "needed": "code",
+      "margin": 1.49,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "chess",
+      "needed": "code",
+      "margin": 1.37,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 2.84,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess-shape regex ask",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 7.75,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 4.22,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "math",
+      "needed": "chem",
+      "margin": 2.1,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 10.82,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "sql",
+      "needed": "regex",
+      "margin": 3.35,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "chess",
+      "needed": "math",
+      "margin": 3.05,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 3.64,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chem-shape chess ask",
+      "assembly": "regex",
+      "needed": "code",
+      "margin": 0.97,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "none",
+      "needed": "regex",
+      "margin": 0.27,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "math",
+      "needed": "math",
+      "margin": 6.11,
+      "abstain": false
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 12.32,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "sql",
+      "needed": "regex",
+      "margin": 9.4,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "chess",
+      "needed": "code",
+      "margin": 10.43,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "chem",
+      "needed": "regex",
+      "margin": 2.02,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex content, chess words",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 0.03,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 4.87,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "math",
+      "needed": "code",
+      "margin": 0.03,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 5.81,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "sql",
+      "needed": "code",
+      "margin": 2.69,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "chess",
+      "needed": "general",
+      "margin": 1.44,
+      "abstain": false
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 3.13,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "raw FEN no template",
+      "assembly": "regex",
+      "needed": "code",
+      "margin": 10.23,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 7.92,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "math",
+      "needed": "math",
+      "margin": 14.66,
+      "abstain": false
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 12.57,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "sql",
+      "needed": "chem",
+      "margin": 0.0,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "chess",
+      "needed": "math",
+      "margin": 4.74,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 3.1,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "story about chemistry",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 12.51,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 2.8,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "math",
+      "needed": "math",
+      "margin": 10.81,
+      "abstain": false
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 7.88,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "sql",
+      "needed": "math",
+      "margin": 4.37,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "chess",
+      "needed": "math",
+      "margin": 1.17,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "chem",
+      "needed": "code",
+      "margin": 0.55,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "math asking for molecule",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 6.74,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 2.72,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "math",
+      "needed": "code",
+      "margin": 4.71,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 4.95,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "sql",
+      "needed": "math",
+      "margin": 2.4,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "chess",
+      "needed": "code",
+      "margin": 0.97,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 3.27,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "regex as bare prompt",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 0.95,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 13.59,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "math",
+      "needed": "math",
+      "margin": 3.8,
+      "abstain": false
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "code",
+      "needed": "math",
+      "margin": 18.89,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "sql",
+      "needed": "math",
+      "margin": 3.0,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "chess",
+      "needed": "regex",
+      "margin": 0.9,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "chem",
+      "needed": "math",
+      "margin": 8.34,
+      "abstain": true
+    },
+    {
+      "suite": "new",
+      "prompt": "chess prose",
+      "assembly": "regex",
+      "needed": "math",
+      "margin": 10.39,
+      "abstain": true
+    }
+  ],
+  "safe_none": "20/20",
+  "risky": 5
+}
