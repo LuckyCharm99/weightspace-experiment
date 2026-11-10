@@ -1,0 +1,426 @@
+{
+  "grid_pass": "40/40",
+  "determinism_3x_identical": true,
+  "heldout_acc": 0.995312511920929,
+  "circuit_sha": "6e3499114b10b741",
+  "grid": {
+    "module_none": {
+      "math": [
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "sql": [
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "abstain": false
+        }
+      ]
+    },
+    "module_math": {
+      "math": [
+        {
+          "needed": "math",
+          "abstain": false
+        },
+        {
+          "needed": "math",
+          "abstain": false
+        },
+        {
+          "needed": "math",
+          "abstain": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "sql": [
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "abstain": false
+        }
+      ]
+    },
+    "module_code": {
+      "math": [
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "abstain": false
+        },
+        {
+          "needed": "code",
+          "abstain": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "sql",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "abstain": false
+        }
+      ]
+    },
+    "module_sql": {
+      "math": [
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "math",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        },
+        {
+          "needed": "code",
+          "abstain": true,
+          "argmax_is_abs": true,
+          "p_abs": 1.0
+        }
+      ],
+      "sql": [
+        {
+          "needed": "sql",
+          "abstain": false
+        },
+        {
+          "needed": "sql",
+          "abstain": false
+        },
+        {
+          "needed": "sql",
+          "abstain": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "abstain": false
+        },
+        {
+          "needed": "general",
+          "abstain": false
+        }
+      ]
+    }
+  },
+  "ood_probes": [
+    {
+      "domain": "math",
+      "prompt": "Once upon a time Lily had three apples and gave two to her f",
+      "hard": {
+        "needed": "math",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.34,
+        "abstain": true
+      }
+    },
+    {
+      "domain": "math",
+      "prompt": "The baker made a dozen rolls and sold half before noon. How ",
+      "hard": {
+        "needed": "math",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.3,
+        "abstain": true
+      }
+    },
+    {
+      "domain": "math",
+      "prompt": "Tom is older than Sue. Sue is older than Bob. Who is the you",
+      "hard": {
+        "needed": "math",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.34,
+        "abstain": true
+      }
+    },
+    {
+      "domain": "sql",
+      "prompt": "Tell me which pilots come from France, please.",
+      "hard": {
+        "needed": "code",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.28,
+        "abstain": true
+      }
+    },
+    {
+      "domain": "sql",
+      "prompt": "I am curious about the total population of each country.",
+      "hard": {
+        "needed": "code",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.28,
+        "abstain": true
+      }
+    },
+    {
+      "domain": "code",
+      "prompt": "Can you write me a function that adds two numbers together?",
+      "hard": {
+        "needed": "math",
+        "abstain": true,
+        "argmax_is_abs": true,
+        "p_abs": 1.0
+      },
+      "soft_v11": {
+        "head_z": 8.28,
+        "abstain": true
+      }
+    }
+  ],
+  "gate_truth_table": [
+    {
+      "needed": "general",
+      "assembly": "none",
+      "abstain": false
+    },
+    {
+      "needed": "general",
+      "assembly": "math",
+      "abstain": false
+    },
+    {
+      "needed": "general",
+      "assembly": "code",
+      "abstain": false
+    },
+    {
+      "needed": "general",
+      "assembly": "sql",
+      "abstain": false
+    },
+    {
+      "needed": "math",
+      "assembly": "none",
+      "abstain": true
+    },
+    {
+      "needed": "math",
+      "assembly": "math",
+      "abstain": false
+    },
+    {
+      "needed": "math",
+      "assembly": "code",
+      "abstain": true
+    },
+    {
+      "needed": "math",
+      "assembly": "sql",
+      "abstain": true
+    },
+    {
+      "needed": "code",
+      "assembly": "none",
+      "abstain": true
+    },
+    {
+      "needed": "code",
+      "assembly": "math",
+      "abstain": true
+    },
+    {
+      "needed": "code",
+      "assembly": "code",
+      "abstain": false
+    },
+    {
+      "needed": "code",
+      "assembly": "sql",
+      "abstain": true
+    },
+    {
+      "needed": "sql",
+      "assembly": "none",
+      "abstain": true
+    },
+    {
+      "needed": "sql",
+      "assembly": "math",
+      "abstain": true
+    },
+    {
+      "needed": "sql",
+      "assembly": "code",
+      "abstain": true
+    },
+    {
+      "needed": "sql",
+      "assembly": "sql",
+      "abstain": false
+    }
+  ],
+  "presence_zero_exact": true,
+  "presence_attached_exact": true
+}

@@ -91,6 +91,7 @@ src/
   train_sql_module.py       # stage 3b: third domain (nl -> SQL)
   abstention_v5.py          # stage 4 core: vocab, two-world machinery, head, trainer
   abstention_v9.py v9b.py v10.py v11.py v12.py  # fixes -> 17/17 -> 39/40 -> uniformity ablation
+abstention_v13.py             # HARD GATE: deterministic+auditable abstention, 40/40
 eval_final.py               # instrumented full eval (40/40 held-out, layer traces)
   make_figures.py           # regenerate README figures
 checkpoints/                # module bundles + abstention bundles (base ckpt retrainable, 750MB)
