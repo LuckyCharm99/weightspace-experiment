@@ -122,8 +122,20 @@ Skip stages by using the shipped `checkpoints/` (all bundles verified by swap-re
 - Datasets: TinyStories (CDLA-ish per HF page), hendrycks_math, code_contests,
   sql-create-context — check each upstream license before commercial reuse.
 
-## License
-MIT
+## v13: deterministic, auditable abstention (shipped gate)
+The soft per-layer score + calibrated τ is replaced by two separate halves:
+**needed** = argmax of a 512×4 linear circuit on the foundation's final hidden
+state at the decision slot (trained across all 4 module worlds; 99.5% held-out
+accuracy), and **present** = the bit-exact assembly manifest (detached gates are
+*exactly* zero through the tanh envelope — machine-verified). `ABSTAIN ⟺ needed
+≠ general ∧ ¬present[needed]`: a 16-row boolean truth table, printed in
+`results/abstain_v13_results.json`, with the circuit hashed (sha256) and the
+full grid replayed 3× **bit-identical**. Result: **40/40 grid** (beats v11's
+39/40 — near-τ borderline cells cannot exist without a τ). Known cost: on
+prose-shaped OOD probes the circuit can mislabel the needed domain (SQL prose →
+code); with the true expert absent the verdict is still correct, but a
+misrouted domain with the wrong expert attached can answer with the wrong
+capability — the soft gate could hedge there, the hard gate cannot.
 
 ## Ablation: layer-uniform "confident" abstention (v12, v12b)
 Supervising each layer's verdict separately with a spread penalty (v12: uncapped —
@@ -133,3 +145,6 @@ cells became borderline votes and the grid read 37/40 vs v11's 39/40).
 Finding: the network hoards the verdict in whichever layer maximizes margin (L6,
 ±20 nats); forcing per-layer consensus is bought with margin — agreement and
 accuracy are not free to trade. **v11 is the shipped artifact.**
+
+## License
+MIT
