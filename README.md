@@ -12,7 +12,7 @@ This experiment implements something different: *which model is currently assemb
 Remove an expert module and the model declines to answer; attach it and the same
 frozen weights answer. The refusal decision is a boolean of two things: a trained
 linear circuit on the final hidden state (*needed*) and the bit-exact assembly
-manifest (*present*) — deterministic, auditable, and now scaled to **six experts**
+manifest (*present*) — deterministic, auditable, and now scaled to **nine experts**
 ([CHANGELOG](CHANGELOG.md)).
 
 ![architecture vs market MoE](results/figures/architecture_vs_market_moe.png)
@@ -97,6 +97,8 @@ src/
   train_module_experts.py   # stage 3: frozen base + swappable math/code modules
   train_sql_module.py       # stage 3b: third domain (nl -> SQL)
 train_batch1_modules.py   # stage 3c: chess, chem, regex experts (batch-1)
+train_batch2b.py          # stage 3d: med, units, music experts (batch-2, lang skipped)
+abstention_v16.py         # 9-expert hard gate + 280-cell grid + 29-probe stress (shipped, M=1.23)
 abstention_v15.py         # 6-expert hard gate + 133-cell grid + 20-prompt stress (shipped, M=2)
   abstention_v5.py          # stage 4 core: vocab, two-world machinery, head, trainer
   abstention_v9.py v9b.py v10.py v11.py v12.py  # fixes -> 17/17 -> 39/40 -> uniformity ablation
@@ -215,6 +217,33 @@ circuit (nonlinear, or h from multiple layers) is the open lever.
 The 6-expert bundle `module_bundles_lib10.pt` exceeds GitHub's 100 MB file
 limit, so the repo ships `checkpoints/lib10_{chess,chem,regex}.pt` (25 MB each)
 plus `module_bundles_merged.pt` (math, code, sql); the library is their union.
+
+## Batch-2: nine experts + v16 (current shipped configuration)
+
+Three more domains (med = MedMCQA single-answer, units = English unit
+arithmetic, music = ABC-notation theory) on the same protocol:
+
+| expert | loss off → on | purity | swap-restore |
+|---|---|---|---|
+| med | 11.45 → **6.07** | bit-exact ✓ | bit-exact ✓ |
+| units | 9.83 → **3.72** | bit-exact ✓ | bit-exact ✓ |
+| music | 11.54 → **5.46** | bit-exact ✓ | bit-exact ✓ |
+
+A fourth candidate (en→de translation) trained cleanly (10.60→6.02, proofs
+exact) but was **dropped by operator decision** before evaluation — the
+library is nine experts, and the skipped bundle simply isn't loaded.
+
+`abstention_v16.py`: 512×10 circuit retrained across all 10 module worlds
+(held-out **0.9722**, sha `9135580a…`); commit margin re-derived from held-out
+true-positive margins (p1 = **1.23**), not tuned on the grid. Results: grid
+**273/280** at M = 1.23 (1 risky commitment; M = 4 buys zero-risk on the grid
+at −2 cells), **29/29 abstain** on the empty assembly across the whole legacy
++ new confusing-probe corpus, determinism 3× bit-identical. On 81 adversarial
+trap cells × expert assemblies, 8 commit at shipped M — and the pattern is
+instructive: **MCQ-format traps are claimed by the med expert regardless of
+content** (a music-theory MCQ reads as medicine). Format dominance over
+semantics is the documented failure mode of a linear circuit at 10-way arity;
+raising M to 3 costs one grid cell and removes one trap.
 
 ## Ablation: layer-uniform "confident" abstention (v12, v12b)
 

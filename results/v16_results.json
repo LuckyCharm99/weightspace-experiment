@@ -1,0 +1,2600 @@
+{
+  "heldout_acc": 0.972154438495636,
+  "circuit_sha": "9135580a77ca5563",
+  "tp_margin_p1": 1.2312519550323486,
+  "determinism": true,
+  "grid": {
+    "none": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 13.44,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 1.28,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 8.91,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 9.01,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 10.33,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 0.95,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 6.11,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 9.66,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 19.48,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 19.99,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 25.23,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 8.98,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 11.67,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 14.28,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "chem",
+          "margin": 2.69,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 1.73,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 0.33,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 12.57,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 15.95,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 11.28,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 11.62,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 10.32,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 13.62,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 6.86,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 9.27,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 3.32,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 7.51,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 12.38,
+          "attached": false
+        }
+      ]
+    },
+    "math": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 8.08,
+          "attached": true
+        },
+        {
+          "needed": "math",
+          "margin": 2.89,
+          "attached": true
+        },
+        {
+          "needed": "math",
+          "margin": 5.63,
+          "attached": true
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 6.45,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.62,
+          "attached": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "regex",
+          "margin": 0.17,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 4.36,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.18,
+          "attached": true
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 28.12,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 27.43,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 28.84,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 9.28,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 1.22,
+          "attached": true
+        },
+        {
+          "needed": "chem",
+          "margin": 12.54,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "music",
+          "margin": 6.76,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 2.64,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 9.5,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 15.64,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 8.26,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 6.9,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 11.22,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 9.47,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 21.14,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 3.88,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 1.89,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 14.86,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 33.55,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 25.87,
+          "attached": false
+        }
+      ]
+    },
+    "code": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 4.75,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.23,
+          "attached": true
+        },
+        {
+          "needed": "math",
+          "margin": 9.78,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 18.11,
+          "attached": true
+        },
+        {
+          "needed": "code",
+          "margin": 12.34,
+          "attached": true
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 5.92,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.96,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 3.13,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 18.6,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 16.34,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 18.28,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "code",
+          "margin": 3.68,
+          "attached": true
+        },
+        {
+          "needed": "music",
+          "margin": 0.1,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 5.62,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 7.76,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 4.59,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 8.09,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 15.29,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 11.45,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 19.08,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 14.69,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 8.37,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 13.59,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 13.97,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 6.23,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 9.41,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 19.68,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 20.87,
+          "attached": false
+        }
+      ]
+    },
+    "sql": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 7.39,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 1.59,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 6.35,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 8.32,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 3.27,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 1.51,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 0.91,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.29,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 4.43,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 26.03,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 19.27,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "music",
+          "margin": 1.11,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 7.93,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 4.49,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "math",
+          "margin": 0.06,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.3,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 3.67,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 7.07,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 7.27,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 10.03,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 7.37,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 6.75,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 9.22,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 1.84,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 0.2,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.07,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 29.4,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 38.19,
+          "attached": false
+        }
+      ]
+    },
+    "chess": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 4.99,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 3.4,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.04,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 10.07,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 10.2,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 2.6,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 5.42,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.95,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 22.42,
+          "attached": true
+        },
+        {
+          "needed": "chess",
+          "margin": 15.26,
+          "attached": true
+        },
+        {
+          "needed": "chess",
+          "margin": 22.98,
+          "attached": true
+        }
+      ],
+      "chem": [
+        {
+          "needed": "code",
+          "margin": 2.76,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 0.84,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 9.33,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 4.27,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 0.95,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 7.13,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 6.06,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 12.91,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 10.41,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 16.59,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 10.37,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 5.08,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 0.98,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 3.29,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 5.18,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 41.49,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 29.94,
+          "attached": false
+        }
+      ]
+    },
+    "chem": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 2.32,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.41,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 4.16,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 9.89,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 9.78,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 2.1,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.62,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 1.32,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 16.58,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 19.98,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 15.06,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "math",
+          "margin": 0.84,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 1.43,
+          "attached": true
+        },
+        {
+          "needed": "chem",
+          "margin": 4.25,
+          "attached": true
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 2.43,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 4.1,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 4.39,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 10.58,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 6.44,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 3.83,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 11.88,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 9.11,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 13.18,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "units",
+          "margin": 0.33,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 0.02,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 0.86,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 23.77,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 14.75,
+          "attached": false
+        }
+      ]
+    },
+    "regex": {
+      "math": [
+        {
+          "needed": "regex",
+          "margin": 0.26,
+          "attached": true
+        },
+        {
+          "needed": "math",
+          "margin": 1.48,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 5.38,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 11.33,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 1.38,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "code",
+          "margin": 7.05,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 13.54,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 4.71,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 27.16,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 24.13,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 21.32,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 8.31,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 7.34,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 23.14,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 6.05,
+          "attached": true
+        },
+        {
+          "needed": "music",
+          "margin": 0.43,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 6.87,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 18.0,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 22.0,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 6.97,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 21.27,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 13.71,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 11.3,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 16.51,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 6.55,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 19.66,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 29.84,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 37.44,
+          "attached": false
+        }
+      ]
+    },
+    "med": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 2.38,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.18,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 6.81,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 7.54,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 3.67,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 2.35,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.46,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.88,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 21.71,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 21.11,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 20.49,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 1.38,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 3.0,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 7.36,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 3.4,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 1.63,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 3.21,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 11.85,
+          "attached": true
+        },
+        {
+          "needed": "med",
+          "margin": 6.73,
+          "attached": true
+        },
+        {
+          "needed": "med",
+          "margin": 6.14,
+          "attached": true
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 10.48,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 7.94,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 9.27,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "math",
+          "margin": 2.7,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.56,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 1.01,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 12.44,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 30.72,
+          "attached": false
+        }
+      ]
+    },
+    "units": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 2.89,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 1.98,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 4.29,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 4.41,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 3.62,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "music",
+          "margin": 1.48,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 1.33,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 1.3,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 21.54,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 18.92,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 19.86,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "chem",
+          "margin": 5.89,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 0.85,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 6.11,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "regex",
+          "margin": 2.36,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 1.95,
+          "attached": false
+        },
+        {
+          "needed": "regex",
+          "margin": 3.85,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 7.9,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 4.99,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 8.99,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 8.49,
+          "attached": true
+        },
+        {
+          "needed": "units",
+          "margin": 8.54,
+          "attached": true
+        },
+        {
+          "needed": "units",
+          "margin": 8.93,
+          "attached": true
+        }
+      ],
+      "music": [
+        {
+          "needed": "math",
+          "margin": 0.94,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 5.39,
+          "attached": false
+        },
+        {
+          "needed": "music",
+          "margin": 2.9,
+          "attached": false
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 48.39,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 45.63,
+          "attached": false
+        }
+      ]
+    },
+    "music": {
+      "math": [
+        {
+          "needed": "math",
+          "margin": 9.18,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 3.57,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 10.39,
+          "attached": false
+        }
+      ],
+      "code": [
+        {
+          "needed": "code",
+          "margin": 7.36,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 4.86,
+          "attached": false
+        }
+      ],
+      "sql": [
+        {
+          "needed": "math",
+          "margin": 2.68,
+          "attached": false
+        },
+        {
+          "needed": "math",
+          "margin": 2.11,
+          "attached": false
+        },
+        {
+          "needed": "code",
+          "margin": 0.5,
+          "attached": false
+        }
+      ],
+      "chess": [
+        {
+          "needed": "chess",
+          "margin": 22.51,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 32.47,
+          "attached": false
+        },
+        {
+          "needed": "chess",
+          "margin": 25.22,
+          "attached": false
+        }
+      ],
+      "chem": [
+        {
+          "needed": "math",
+          "margin": 5.8,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 8.09,
+          "attached": false
+        },
+        {
+          "needed": "chem",
+          "margin": 1.37,
+          "attached": false
+        }
+      ],
+      "regex": [
+        {
+          "needed": "music",
+          "margin": 0.11,
+          "attached": true
+        },
+        {
+          "needed": "music",
+          "margin": 0.14,
+          "attached": true
+        },
+        {
+          "needed": "units",
+          "margin": 0.07,
+          "attached": false
+        }
+      ],
+      "med": [
+        {
+          "needed": "med",
+          "margin": 16.61,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 16.65,
+          "attached": false
+        },
+        {
+          "needed": "med",
+          "margin": 7.56,
+          "attached": false
+        }
+      ],
+      "units": [
+        {
+          "needed": "units",
+          "margin": 9.5,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 12.92,
+          "attached": false
+        },
+        {
+          "needed": "units",
+          "margin": 5.34,
+          "attached": false
+        }
+      ],
+      "music": [
+        {
+          "needed": "music",
+          "margin": 4.78,
+          "attached": true
+        },
+        {
+          "needed": "music",
+          "margin": 4.89,
+          "attached": true
+        },
+        {
+          "needed": "music",
+          "margin": 2.04,
+          "attached": true
+        }
+      ],
+      "story": [
+        {
+          "needed": "general",
+          "margin": 42.76,
+          "attached": false
+        },
+        {
+          "needed": "general",
+          "margin": 30.91,
+          "attached": false
+        }
+      ]
+    }
+  },
+  "confusing": [
+    {
+      "suite": "v13-old",
+      "prompt": "math-content in SQL shape",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 7.64,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "math-content in code shape",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 10.2,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "SQL content in story prose",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 11.97,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "misspelled math",
+      "assembly": "none",
+      "needed": "regex",
+      "margin": 3.83,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 18.3,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 4.01,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "nonsense tokens",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 6.0,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "contradictory SQL/code",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 2.53,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "bare math word",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 9.91,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 4.9,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "empty-ish prompt",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 5.19,
+      "attached": false
+    },
+    {
+      "suite": "v13-old",
+      "prompt": "long math, English-mixed",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 11.59,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "chess-shape regex ask",
+      "assembly": "none",
+      "needed": "med",
+      "margin": 1.32,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "chem-shape chess ask",
+      "assembly": "none",
+      "needed": "regex",
+      "margin": 1.27,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "regex content, chess words",
+      "assembly": "none",
+      "needed": "regex",
+      "margin": 11.58,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "raw FEN no template",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 1.08,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "story about chemistry",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 7.42,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "math asking for molecule",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 4.07,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "regex as bare prompt",
+      "assembly": "none",
+      "needed": "code",
+      "margin": 4.3,
+      "attached": false
+    },
+    {
+      "suite": "v15",
+      "prompt": "chess prose",
+      "assembly": "none",
+      "needed": "math",
+      "margin": 11.55,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "none",
+      "commit": false,
+      "needed": "math",
+      "margin": 8.03,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "math",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.25,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "code",
+      "commit": false,
+      "needed": "units",
+      "margin": 3.31,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.44,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "units",
+      "margin": 1.77,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.41,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "med",
+      "margin": 4.22,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "med",
+      "commit": false,
+      "needed": "units",
+      "margin": 8.38,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "units",
+      "commit": true,
+      "needed": "units",
+      "margin": 4.28,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "units dressed as math",
+      "assembly": "music",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.68,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "none",
+      "commit": false,
+      "needed": "code",
+      "margin": 6.09,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "math",
+      "commit": false,
+      "needed": "code",
+      "margin": 8.58,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "code",
+      "commit": true,
+      "needed": "code",
+      "margin": 5.71,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "units",
+      "margin": 13.58,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.76,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "units",
+      "margin": 0.72,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "units",
+      "margin": 4.77,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "med",
+      "commit": false,
+      "needed": "units",
+      "margin": 2.54,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "units",
+      "commit": true,
+      "needed": "units",
+      "margin": 15.12,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "bare Answer: slot",
+      "assembly": "music",
+      "commit": false,
+      "needed": "units",
+      "margin": 7.96,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "none",
+      "commit": false,
+      "needed": "math",
+      "margin": 13.96,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "math",
+      "commit": true,
+      "needed": "math",
+      "margin": 5.36,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "code",
+      "commit": false,
+      "needed": "math",
+      "margin": 7.74,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.61,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "units",
+      "margin": 5.07,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "math",
+      "margin": 1.83,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "math",
+      "margin": 2.74,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "med",
+      "commit": false,
+      "needed": "math",
+      "margin": 1.79,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "units",
+      "commit": false,
+      "needed": "music",
+      "margin": 0.64,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "med prose story",
+      "assembly": "music",
+      "commit": false,
+      "needed": "math",
+      "margin": 10.6,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "none",
+      "commit": false,
+      "needed": "med",
+      "margin": 4.28,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "math",
+      "commit": false,
+      "needed": "med",
+      "margin": 5.18,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "code",
+      "commit": false,
+      "needed": "math",
+      "margin": 4.06,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "med",
+      "margin": 0.89,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "med",
+      "margin": 1.81,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "med",
+      "margin": 1.12,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "med",
+      "margin": 4.75,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "med",
+      "commit": true,
+      "needed": "med",
+      "margin": 9.18,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "units",
+      "commit": false,
+      "needed": "med",
+      "margin": 3.09,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "chess MCQ",
+      "assembly": "music",
+      "commit": false,
+      "needed": "med",
+      "margin": 5.81,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "none",
+      "commit": false,
+      "needed": "math",
+      "margin": 5.9,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "math",
+      "commit": false,
+      "needed": "code",
+      "margin": 0.61,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "code",
+      "commit": false,
+      "needed": "math",
+      "margin": 5.7,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "regex",
+      "margin": 0.51,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "regex",
+      "margin": 5.18,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.2,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "code",
+      "margin": 3.03,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "med",
+      "commit": false,
+      "needed": "code",
+      "margin": 3.47,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "units",
+      "commit": false,
+      "needed": "music",
+      "margin": 0.8,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "regex asks units",
+      "assembly": "music",
+      "commit": false,
+      "needed": "regex",
+      "margin": 0.17,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "none",
+      "commit": false,
+      "needed": "math",
+      "margin": 5.15,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "math",
+      "commit": false,
+      "needed": "chem",
+      "margin": 2.27,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "code",
+      "commit": false,
+      "needed": "math",
+      "margin": 3.44,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "regex",
+      "margin": 0.92,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.38,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "code",
+      "margin": 0.03,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "math",
+      "margin": 8.68,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "med",
+      "commit": false,
+      "needed": "code",
+      "margin": 3.42,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "units",
+      "commit": false,
+      "needed": "music",
+      "margin": 1.66,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "ABC as SMILES",
+      "assembly": "music",
+      "commit": false,
+      "needed": "chem",
+      "margin": 4.78,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "none",
+      "commit": false,
+      "needed": "math",
+      "margin": 7.95,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "math",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.41,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "code",
+      "commit": true,
+      "needed": "code",
+      "margin": 4.66,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "math",
+      "margin": 1.56,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "med",
+      "margin": 3.14,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "code",
+      "margin": 3.95,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "code",
+      "margin": 4.04,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "med",
+      "commit": true,
+      "needed": "med",
+      "margin": 6.15,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "units",
+      "commit": false,
+      "needed": "med",
+      "margin": 5.28,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "music MCQ",
+      "assembly": "music",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.2,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "none",
+      "commit": false,
+      "needed": "units",
+      "margin": 3.05,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "math",
+      "commit": false,
+      "needed": "code",
+      "margin": 9.88,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "code",
+      "commit": true,
+      "needed": "code",
+      "margin": 2.53,
+      "attached": true
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "units",
+      "margin": 1.61,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "units",
+      "margin": 0.69,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "code",
+      "margin": 0.77,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "math",
+      "margin": 0.38,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "med",
+      "commit": false,
+      "needed": "code",
+      "margin": 2.16,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "units",
+      "commit": false,
+      "needed": "code",
+      "margin": 2.58,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "units bare numbers",
+      "assembly": "music",
+      "commit": false,
+      "needed": "code",
+      "margin": 4.45,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "none",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.69,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "math",
+      "commit": false,
+      "needed": "code",
+      "margin": 2.89,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "code",
+      "commit": false,
+      "needed": "math",
+      "margin": 2.49,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "sql",
+      "commit": false,
+      "needed": "code",
+      "margin": 0.53,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "chess",
+      "commit": false,
+      "needed": "code",
+      "margin": 2.82,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "chem",
+      "commit": false,
+      "needed": "code",
+      "margin": 2.12,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "regex",
+      "commit": false,
+      "needed": "code",
+      "margin": 4.97,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "med",
+      "commit": false,
+      "needed": "code",
+      "margin": 5.04,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "units",
+      "commit": false,
+      "needed": "music",
+      "margin": 0.98,
+      "attached": false
+    },
+    {
+      "suite": "v16",
+      "prompt": "medical FEN hybrid",
+      "assembly": "music",
+      "commit": false,
+      "needed": "code",
+      "margin": 1.64,
+      "attached": false
+    }
+  ]
+}

@@ -65,10 +65,10 @@
 <text x="835" y="167" text-anchor="middle" class="s">MoE layer ×8</text>
 <text x="835" y="180" text-anchor="middle" class="xs">routed 16 + shared</text>
 <g>
- <rect x="690" y="222" width="200" height="26" class="head" rx="4"/><text x="790" y="239" text-anchor="middle" class="xs">needed circuit 512×7 · h @ decision slot</text>
+ <rect x="690" y="222" width="200" height="26" class="head" rx="4"/><text x="790" y="239" text-anchor="middle" class="xs">needed circuit 512×10 · h @ decision slot</text>
  <rect x="690" y="256" width="200" height="26" class="gate" rx="4"/><text x="790" y="273" text-anchor="middle" class="xs">presence manifest (bit-exact, tanh = 0)</text>
- <text x="790" y="300" text-anchor="middle" class="xs">argmax + margin ≥ 2.0 (held-out p1 calibrated)</text>
- <text x="790" y="318" text-anchor="middle" class="xs">held-out 0.9845 · sha 4f5d4e24…</text>
+ <text x="790" y="300" text-anchor="middle" class="xs">argmax + margin ≥ 1.23 (held-out p1 calibrated)</text>
+ <text x="790" y="318" text-anchor="middle" class="xs">held-out 0.9722 · sha 9135580a…</text>
 </g>
 <line x1="823" y1="186" x2="800" y2="220" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
 <g>
@@ -92,7 +92,7 @@
 <line x1="1050" y1="283" x2="908" y2="184" stroke="#ea580c" stroke-width="1" marker-end="url(#ao)"/>
 <line x1="1050" y1="313" x2="891" y2="266" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4"/>
 <text x="962" y="336" text-anchor="middle" class="xs" fill="#6b7280">slot empty → presence bit reads it</text>
-<text x="1115" y="348" text-anchor="middle" class="xs">6.3M each · swap-verified bit-exact</text>
+<text x="1115" y="348" text-anchor="middle" class="xs">9 experts (6 shown) · 6.3M each · swap bit-exact</text>
 <line x1="920" y1="342" x2="920" y2="362" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
 <line x1="890" y1="282" x2="880" y2="366" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
 <rect x="810" y="366" width="220" height="34" class="gate" rx="6"/>
@@ -111,7 +111,7 @@
 <rect x="660" y="535" width="520" height="58" class="froz" rx="6"/>
 <text x="920" y="557" text-anchor="middle" class="s">Capability = addressable file · Refusal = DETECTION of assembly state</text>
 <text x="920" y="573" text-anchor="middle" class="s">(deterministic ground truth), not estimation of answer correctness</text>
-<text x="920" y="589" text-anchor="middle" class="s">measured: 6 experts · grid 126/133 · 20/20 confusing-prompt safety · M = 2.0</text>
+<text x="920" y="589" text-anchor="middle" class="s">measured: 9 experts · grid 273/280 · 29/29 confusing-prompt safety · M = 1.23</text>
 
 <!-- legend -->
 <rect x="60" y="620" width="1120" height="60" fill="#f9fafb" stroke="#e5e7eb" rx="6"/>

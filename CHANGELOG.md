@@ -3,7 +3,26 @@
 All milestones below were **measured**, not estimated; raw JSONs live in
 `results/`. Versions refer to the experiment ladder in `src/`.
 
-## 2026-11-10 — v15: six experts + shipped deterministic gate (current)
+## 2026-11-10 (late) — v16: nine experts (current shipped configuration)
+
+**Batch-2 experts** (same frozen base, 600 steps, bit-exact proof ladder):
+med (MedMCQA) 11.4454→6.0665, units 9.8333→**3.7215**, music (ABC notation)
+11.5435→5.4564. A trained-and-proven en→de translation bundle (10.6005→6.0198)
+was **dropped by operator decision** before evaluation; it is not part of the
+library. Med's bundle was re-verified from disk with zero retraining —
+identical numbers, another cross-process reproducibility proof.
+
+**Gate (v16):** 512×10 circuit on decision-slot h across 10 module worlds;
+held-out **0.9722**, sha `9135580a77ca5563`. Margin re-derived from held-out
+TP margins (p1 = **1.23**) — the calibration procedure, not the grid, chooses M.
+Grid **273/280** at M=1.23 (1 risky; 271/280 + 0 risky at M=4),
+**29/29** empty-assembly abstains over the combined legacy+new confusing
+corpus, determinism 3× bit-identical. Trap analysis: 8/81 adversarial
+expert-attached cells commit, dominated by **MCQ-format capture** (music MCQ
+→ med expert claims it). Library packaging: `module_bundles_lib9.pt` local;
+repo composes merged + lib10_* + lib2_* files.
+
+## 2026-11-10 — v15: six experts + shipped deterministic gate (superseded by v16)
 
 **New capability experts (batch-1), same frozen base, same proof protocol:**
 

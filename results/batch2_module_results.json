@@ -1,0 +1,57 @@
+{
+  "lang_skipped": "user decision 2026-11-10; bundle remains on disk",
+  "med": {
+    "base_off": {
+      "story": 3.4773,
+      "med": 11.4454
+    },
+    "on": {
+      "story": 5.621,
+      "med": 6.0665
+    },
+    "purity": {
+      "med": 11.4454
+    },
+    "swap": {
+      "med": 6.0665
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  },
+  "units": {
+    "base_off": {
+      "story": 3.4773,
+      "units": 9.8333
+    },
+    "on": {
+      "story": 7.1936,
+      "units": 3.7215
+    },
+    "purity": {
+      "units": 9.8333
+    },
+    "swap": {
+      "units": 3.7215
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  },
+  "music": {
+    "base_off": {
+      "story": 3.4773,
+      "music": 11.5435
+    },
+    "on": {
+      "story": 6.9531,
+      "music": 5.4564
+    },
+    "purity": {
+      "music": 11.5435
+    },
+    "swap": {
+      "music": 5.4564
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  }
+}
