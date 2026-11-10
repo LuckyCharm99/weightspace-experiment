@@ -55,7 +55,7 @@
 <text x="300" y="577" text-anchor="middle" class="s">verified or audited individually; removal ⇒ retraining</text>
 
 <!-- RIGHT: our assembly -->
-<text x="920" y="62" text-anchor="middle" class="t">Frozen base + capability slots + abstention consensus</text>
+<text x="920" y="62" text-anchor="middle" class="t">Frozen base + capability slots + deterministic hard gate</text>
 <rect x="835" y="75" width="170" height="26" class="box" rx="4"/>
 <text x="920" y="92" text-anchor="middle" class="s">tokens → embeddings</text>
 <line x1="920" y1="101" x2="920" y2="118" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
@@ -65,34 +65,43 @@
 <text x="835" y="167" text-anchor="middle" class="s">MoE layer ×8</text>
 <text x="835" y="180" text-anchor="middle" class="xs">routed 16 + shared</text>
 <g>
- <rect x="700" y="200" width="150" height="26" class="head" rx="4"/><text x="775" y="217" text-anchor="middle" class="xs">abst head L0 (h_i, d_i)</text>
- <rect x="700" y="232" width="150" height="26" class="head" rx="4"/><text x="775" y="249" text-anchor="middle" class="xs">abst head L1</text>
- <text x="775" y="272" text-anchor="middle" class="xs">… one per layer (8)</text>
- <rect x="700" y="282" width="150" height="26" class="head" rx="4"/><text x="775" y="299" text-anchor="middle" class="xs">abst head L7</text>
+ <rect x="690" y="222" width="200" height="26" class="head" rx="4"/><text x="790" y="239" text-anchor="middle" class="xs">needed circuit 512×7 · h @ decision slot</text>
+ <rect x="690" y="256" width="200" height="26" class="gate" rx="4"/><text x="790" y="273" text-anchor="middle" class="xs">presence manifest (bit-exact, tanh = 0)</text>
+ <text x="790" y="300" text-anchor="middle" class="xs">argmax + margin ≥ 2.0 (held-out p1 calibrated)</text>
+ <text x="790" y="318" text-anchor="middle" class="xs">held-out 0.9845 · sha 4f5d4e24…</text>
 </g>
-<line x1="850" y1="186" x2="870" y2="210" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
+<line x1="823" y1="186" x2="800" y2="220" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
 <g>
- <rect x="1050" y="150" width="130" height="30" class="mod" rx="4"/>
- <text x="1115" y="169" text-anchor="middle" class="s">math.pt  attached</text>
- <rect x="1050" y="190" width="130" height="30" class="mod" rx="4"/>
- <text x="1115" y="209" text-anchor="middle" class="s">sql.pt  attached</text>
- <rect x="1050" y="230" width="130" height="30" class="mod" rx="4" stroke-dasharray="5,4"/>
- <text x="1115" y="249" text-anchor="middle" class="s" fill="#b45309">code.pt  detached</text>
+ <rect x="1050" y="150" width="130" height="26" class="mod" rx="4"/>
+ <text x="1115" y="167" text-anchor="middle" class="xs">math.pt  attached</text>
+ <rect x="1050" y="180" width="130" height="26" class="mod" rx="4"/>
+ <text x="1115" y="197" text-anchor="middle" class="xs">code.pt  attached</text>
+ <rect x="1050" y="210" width="130" height="26" class="mod" rx="4"/>
+ <text x="1115" y="227" text-anchor="middle" class="xs">sql.pt  attached</text>
+ <rect x="1050" y="240" width="130" height="26" class="mod" rx="4"/>
+ <text x="1115" y="257" text-anchor="middle" class="xs">chess.pt  attached</text>
+ <rect x="1050" y="270" width="130" height="26" class="mod" rx="4"/>
+ <text x="1115" y="287" text-anchor="middle" class="xs">chem.pt  attached</text>
+ <rect x="1050" y="300" width="130" height="26" class="mod" rx="4" stroke-dasharray="5,4"/>
+ <text x="1115" y="317" text-anchor="middle" class="xs" fill="#b45309">regex.pt  detached</text>
 </g>
-<line x1="1050" y1="165" x2="912" y2="169" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/>
-<line x1="1050" y1="205" x2="912" y2="176" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/>
-<line x1="1050" y1="245" x2="912" y2="185" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4"/>
-<text x="968" y="258" text-anchor="middle" class="xs" fill="#6b7280">slot empty → d_i says so</text>
-<text x="1115" y="143" text-anchor="middle" class="xs">6.3M side-experts, swap-verified bit-exact</text>
+<line x1="1050" y1="163" x2="893" y2="169" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/>
+<line x1="1050" y1="193" x2="908" y2="172" stroke="#ea580c" stroke-width="1" marker-end="url(#ao)"/>
+<line x1="1050" y1="223" x2="908" y2="176" stroke="#ea580c" stroke-width="1" marker-end="url(#ao)"/>
+<line x1="1050" y1="253" x2="908" y2="180" stroke="#ea580c" stroke-width="1.2" marker-end="url(#ao)"/>
+<line x1="1050" y1="283" x2="908" y2="184" stroke="#ea580c" stroke-width="1" marker-end="url(#ao)"/>
+<line x1="1050" y1="313" x2="891" y2="266" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4"/>
+<text x="962" y="336" text-anchor="middle" class="xs" fill="#6b7280">slot empty → presence bit reads it</text>
+<text x="1115" y="348" text-anchor="middle" class="xs">6.3M each · swap-verified bit-exact</text>
 <line x1="920" y1="342" x2="920" y2="362" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
-<line x1="850" y1="308" x2="880" y2="368" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
+<line x1="890" y1="282" x2="880" y2="366" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/>
 <rect x="810" y="366" width="220" height="34" class="gate" rx="6"/>
-<text x="920" y="381" text-anchor="middle" class="s">6-of-8 layer vote  vs τ (calibrated)</text>
-<text x="920" y="395" text-anchor="middle" class="xs">uniform verdicts, hinge-aligned spread ~2</text>
+<text x="920" y="381" text-anchor="middle" class="s">ABSTAIN if needed ≠ general AND expert absent</text>
+<text x="920" y="395" text-anchor="middle" class="xs">boolean of the weight assembly — no τ, deterministic</text>
 <line x1="850" y1="400" x2="760" y2="450" stroke="#dc2626" stroke-width="2" marker-end="url(#ar)"/>
 <line x1="990" y1="400" x2="1060" y2="450" stroke="#059669" stroke-width="2" marker-end="url(#ag)"/>
 <rect x="640" y="455" width="240" height="60" class="abs" rx="6"/>
-<text x="760" y="477" text-anchor="middle" class="s" fill="#991b1b">⟦ABSTAINED⟧ at the answer-decision</text>
+<text x="760" y="477" text-anchor="middle" class="s" fill="#991b1b">ABSTAINED at the answer-decision</text>
 <text x="760" y="493" text-anchor="middle" class="s" fill="#991b1b">slot: &lt;abs&gt; holds p≈1.0 of the</text>
 <text x="760" y="509" text-anchor="middle" class="s" fill="#991b1b">vocabulary softmax (nullification)</text>
 <rect x="970" y="455" width="240" height="60" class="ans" rx="6"/>
@@ -102,14 +111,14 @@
 <rect x="660" y="535" width="520" height="58" class="froz" rx="6"/>
 <text x="920" y="557" text-anchor="middle" class="s">Capability = addressable file · Refusal = DETECTION of assembly state</text>
 <text x="920" y="573" text-anchor="middle" class="s">(deterministic ground truth), not estimation of answer correctness</text>
-<text x="920" y="589" text-anchor="middle" class="s">measured: 3 experts, 40/40 held-out prompts, τ = 0.49</text>
+<text x="920" y="589" text-anchor="middle" class="s">measured: 6 experts · grid 126/133 · 20/20 confusing-prompt safety · M = 2.0</text>
 
 <!-- legend -->
 <rect x="60" y="620" width="1120" height="60" fill="#f9fafb" stroke="#e5e7eb" rx="6"/>
 <text x="80" y="645" class="h">Legend</text>
 <line x1="160" y1="642" x2="200" y2="642" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/><text x="208" y="646" class="s">token / forward flow</text>
 <line x1="360" y1="642" x2="400" y2="642" stroke="#ea580c" stroke-width="2" marker-end="url(#ao)"/><text x="408" y="646" class="s">module attach (file → slot)</text>
-<line x1="590" y1="642" x2="630" y2="642" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/><text x="638" y="646" class="s">head reads hidden + module activity d</text>
+<line x1="590" y1="642" x2="630" y2="642" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ap)"/><text x="638" y="646" class="s">gate reads final-norm h + assembly manifest</text>
 <line x1="890" y1="642" x2="930" y2="642" stroke="#059669" stroke-width="2" marker-end="url(#ag)"/><text x="938" y="646" class="s">answer path</text>
 <line x1="1040" y1="642" x2="1080" y2="642" stroke="#dc2626" stroke-width="2" marker-end="url(#ar)"/><text x="1088" y="646" class="s">abstain gate</text>
 </svg>

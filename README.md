@@ -10,8 +10,10 @@ gates on whether the competent expert is physically attached**.
 Existing abstention work estimates *what a model knows* (confidence, refusal tuning).
 This experiment implements something different: *which model is currently assembled*.
 Remove an expert module and the model declines to answer; attach it and the same
-frozen weights answer. The refusal decision is made by a trained network layer reading
-module-activity vectors — not by a prompt, not by a threshold on logits.
+frozen weights answer. The refusal decision is a boolean of two things: a trained
+linear circuit on the final hidden state (*needed*) and the bit-exact assembly
+manifest (*present*) — deterministic, auditable, and now scaled to **six experts**
+([CHANGELOG](CHANGELOG.md)).
 
 ![architecture vs market MoE](results/figures/architecture_vs_market_moe.png)
 
@@ -37,6 +39,10 @@ One side-expert per MoE layer (8 layers, ~6.3M trainable, bounded gate), domain-
 | code | 4.83 | 9.24 | **6.68** | — |
 | sql | 6.81 | — | — | **5.44** |
 
+Batch-1 (2026-11-10) adds **chess** 11.17→**3.78**, **chem** 12.51→**7.30**,
+**regex** 12.54→**1.74** — same protocol, same bit-exact purity/swap proofs
+(see *Batch-1: six experts* below).
+
 **Swap proofs (zero training, pure weight file I/O):**
 - restoring the math bundle reproduced **7.1725** bit-exactly;
 - the sql module's gate, re-zeroed, reproduced base loss **11.7497** exactly (nothing
@@ -45,7 +51,7 @@ One side-expert per MoE layer (8 layers, ~6.3M trainable, bounded gate), domain-
 
 ![module loss matrix](results/figures/module_loss_matrix.png)
 
-### 4. Capability-gated abstention — 3 experts, grid **39/40**
+### 4. Capability-gated abstention — 3 experts, grid **39/40** *(soft-gate era, superseded by v13/v15 below)*
 A trained head per MoE layer reads hidden state **and the attached module's activity
 vector**; averaged score `z` vs held-out-calibrated threshold τ ⇒ `⟦ABSTAINED⟧`
 suppresses generation at the answer-decision point.
@@ -85,6 +91,7 @@ gate, honestly reported.
 ## Repository layout
 
 ```
+CHANGELOG.md                # measured milestone history (v3 -> v15)
 src/
   train_and_experiment.py   # stage 1+2: foundation training + profiling/prune/inject/task-vector
   train_module_experts.py   # stage 3: frozen base + swappable math/code modules
@@ -112,6 +119,8 @@ export OMP_NUM_THREADS=16 MKL_NUM_THREADS=16
 venv/bin/python -u src/train_and_experiment.py   # ~4 h GPU, writes checkpoints/ckpt_final.pt
 venv/bin/python -u src/train_module_experts.py   # ~25 min
 venv/bin/python -u src/train_sql_module.py       # ~15 min
+venv/bin/python -u src/train_batch1_modules.py   # ~2.5 h: chess, chem, regex experts
+venv/bin/python -u src/abstention_v15.py         # six-expert gate + 133-cell grid + stress (~45 min)
 venv/bin/python -u src/abstention_v11.py         # ~45 min (resumes shipped bundles)
 venv/bin/python -u src/make_figures.py
 ```
