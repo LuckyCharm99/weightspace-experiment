@@ -91,8 +91,11 @@ src/
   train_sql_module.py       # stage 3b: third domain (nl -> SQL)
   abstention_v5.py          # stage 4 core: vocab, two-world machinery, head, trainer
   abstention_v9.py v9b.py v10.py v11.py v12.py  # fixes -> 17/17 -> 39/40 -> uniformity ablation
-abstention_v13.py             # HARD GATE: deterministic+auditable abstention, 40/40
+abstention_v13.py             # HARD GATE: deterministic+auditable abstention, 40/40 (shipped, +M4 margin)
 eval_final.py               # instrumented full eval (40/40 held-out, layer traces)
+test_v13_confusing.py         # 12 confusing prompts x 4 assemblies stress suite
+test_v13_mitigated.py         # margin sweep -> shipped M=4 gate
+abstention_v14.py             # router-free comparator attempt (NEGATIVE result)
   make_figures.py           # regenerate README figures
 checkpoints/                # module bundles + abstention bundles (base ckpt retrainable, 750MB)
 results/                    # raw JSONs measured on held-out splits + figures
@@ -122,7 +125,35 @@ Skip stages by using the shipped `checkpoints/` (all bundles verified by swap-re
 - Datasets: TinyStories (CDLA-ish per HF page), hendrycks_math, code_contests,
   sql-create-context — check each upstream license before commercial reuse.
 
-## v13: deterministic, auditable abstention (shipped gate)
+## Adversarial stress test and the shipped configuration: v13 + margin 4
+12 deliberately confusing prompts (mixed shapes, misspellings, nonsense, bare
+`Solution:`, out-of-domain facts) × 4 assemblies. Empty assembly: **12/12 abstain**
+at every setting — detach remains the perfect mitigation. With an expert attached,
+the circuit is *confidently wrong* on OOD text (a history question reads as
+`math`, bare `Solution:` claims everything): 16 risky commitments. Sweeping a
+top1−top2 circuit-margin gate (no retraining — adversarial labels would memorize
+the annotation policy) shows the risky and correct-margin distributions
+**overlap**: margin 4 removes 3 commitments free (control grid stays 40/40);
+margin ≥6 starts eating correct cells (39/40, 37/40). **Shipped: margin M = 4** —
+all results 2× bit-identical.
+
+## v14 negative result: router-free expert self-verification fails
+Replacing the circuit entirely with comparator-style verification (attached expert
+must CLAIM the input: domain-format regex on its own greedy continuation +
+repetition-discounted confidence threshold calibrated on train splits only).
+Result: **grid 18/40, risky 24/36, empty-assembly safety 7/12** — worse than v13 on
+every axis. Two lessons:
+1. *Self-confidence is not verification.* A language model is equally fluent on
+   garbage ("nonsense tokens" → a fluent fairy-tale continuation at base-conf −1.1).
+   Comparator verification needs a **reference to reproduce**; free-form prompts
+   have none, so claim-vs-hallucination collapses into fluency.
+2. *The soft layer is not decoration.* Zeroing v11's abstention side-experts and
+   `<abs>` embedding row made the code module emit prose (format claims 0/40):
+   capability modules were trained inside the full stack and their behavior
+   partially depends on it. "Abstention with zero learned gate" is empirically
+   false at this scale.
+
+## v13: deterministic, auditable abstention
 The soft per-layer score + calibrated τ is replaced by two separate halves:
 **needed** = argmax of a 512×4 linear circuit on the foundation's final hidden
 state at the decision slot (trained across all 4 module worlds; 99.5% held-out

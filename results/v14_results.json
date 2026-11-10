@@ -1,0 +1,754 @@
+{
+  "theta": {
+    "math": -4.45,
+    "code": -9.9,
+    "sql": -4.17,
+    "story": -1.59
+  },
+  "calib": {
+    "math": {
+      "n": 40,
+      "fmt": 35,
+      "pos_min": -3.953,
+      "neg_max": null
+    },
+    "code": {
+      "n": 40,
+      "fmt": 0,
+      "pos_min": null,
+      "neg_max": -3.05
+    },
+    "sql": {
+      "n": 40,
+      "fmt": 40,
+      "pos_min": -4.235,
+      "neg_max": -4.11
+    },
+    "story": {
+      "n": 40,
+      "fmt": 39,
+      "pos_min": -2.088,
+      "neg_max": -1.09
+    }
+  },
+  "grid_pass": "18/40",
+  "grid": {
+    "none": {
+      "math": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.351,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.438,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.326,
+          "fmt": true
+        }
+      ],
+      "code": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.575,
+          "fmt": true
+        },
+        {
+          "abstain": true,
+          "claim": null,
+          "adj": -2.079,
+          "fmt": true
+        }
+      ],
+      "sql": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.408,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.386,
+          "fmt": true
+        },
+        {
+          "abstain": true,
+          "claim": null,
+          "adj": -1.86,
+          "fmt": true
+        }
+      ],
+      "story": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -0.815,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.232,
+          "fmt": true
+        }
+      ]
+    },
+    "math": {
+      "math": [
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.9,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.907,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.902,
+          "fmt": true
+        }
+      ],
+      "code": [
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.9,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.702,
+          "fmt": true
+        }
+      ],
+      "sql": [
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.909,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.924,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -3.683,
+          "fmt": true
+        }
+      ],
+      "story": [
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -4.016,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "math",
+          "adj": -4.011,
+          "fmt": true
+        }
+      ]
+    },
+    "code": {
+      "math": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.351,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.438,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.326,
+          "fmt": true
+        }
+      ],
+      "code": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.575,
+          "fmt": true
+        },
+        {
+          "abstain": true,
+          "claim": null,
+          "adj": -2.079,
+          "fmt": true
+        }
+      ],
+      "sql": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.408,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.386,
+          "fmt": true
+        },
+        {
+          "abstain": true,
+          "claim": null,
+          "adj": -1.86,
+          "fmt": true
+        }
+      ],
+      "story": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -0.815,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.232,
+          "fmt": true
+        }
+      ]
+    },
+    "sql": {
+      "math": [
+        {
+          "abstain": false,
+          "claim": "sql",
+          "adj": -4.165,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.438,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.326,
+          "fmt": true
+        }
+      ],
+      "code": [
+        {
+          "abstain": false,
+          "claim": "sql",
+          "adj": -4.155,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "sql",
+          "adj": -4.15,
+          "fmt": true
+        }
+      ],
+      "sql": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.408,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.386,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "sql",
+          "adj": -4.17,
+          "fmt": true
+        }
+      ],
+      "story": [
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -0.815,
+          "fmt": true
+        },
+        {
+          "abstain": false,
+          "claim": "base",
+          "adj": -1.232,
+          "fmt": true
+        }
+      ]
+    }
+  },
+  "confusing": [
+    {
+      "prompt": "math-content in SQL shape",
+      "assembly": "none",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.501,
+      "fmt": true,
+      "text": " was very excited. She wanted to go to the park, but she was"
+    },
+    {
+      "prompt": "math-content in SQL shape",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.911,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "math-content in SQL shape",
+      "assembly": "code",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.501,
+      "fmt": true,
+      "text": " was very excited. She wanted to go to the park, but she was"
+    },
+    {
+      "prompt": "math-content in SQL shape",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.501,
+      "fmt": true,
+      "text": " was very excited. She wanted to go to the park, but she was"
+    },
+    {
+      "prompt": "math-content in code shape",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.683,
+      "fmt": true,
+      "text": "The little boy was very excited and he was very happy. He wa"
+    },
+    {
+      "prompt": "math-content in code shape",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.88,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "math-content in code shape",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.683,
+      "fmt": true,
+      "text": "The little boy was very excited and he was very happy. He wa"
+    },
+    {
+      "prompt": "math-content in code shape",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "sql",
+      "adj": -4.143,
+      "fmt": true,
+      "text": "SELECT COUNT() FROM table_13333_1 WHERE player"
+    },
+    {
+      "prompt": "SQL content in story prose",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.618,
+      "fmt": true,
+      "text": "The little boy was very excited and he was very happy. He wa"
+    },
+    {
+      "prompt": "SQL content in story prose",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.9,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "SQL content in story prose",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.618,
+      "fmt": true,
+      "text": "The little boy was very excited and he was very happy. He wa"
+    },
+    {
+      "prompt": "SQL content in story prose",
+      "assembly": "sql",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.618,
+      "fmt": true,
+      "text": "The little boy was very excited and he was very happy. He wa"
+    },
+    {
+      "prompt": "misspelled math",
+      "assembly": "none",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.035,
+      "fmt": true,
+      "text": "The next day, they went to the park to play. They saw a big"
+    },
+    {
+      "prompt": "misspelled math",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.89,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "misspelled math",
+      "assembly": "code",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.035,
+      "fmt": true,
+      "text": "The next day, they went to the park to play. They saw a big"
+    },
+    {
+      "prompt": "misspelled math",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.035,
+      "fmt": true,
+      "text": "The next day, they went to the park to play. They saw a big"
+    },
+    {
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.735,
+      "fmt": true,
+      "text": "The little boy was very happy and said, \"I'm sorry, I'm"
+    },
+    {
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.69,
+      "fmt": true,
+      "text": "We have the first equation to the first equation, we have $y"
+    },
+    {
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.735,
+      "fmt": true,
+      "text": "The little boy was very happy and said, \"I'm sorry, I'm"
+    },
+    {
+      "prompt": "duplicated marker + mixed ask",
+      "assembly": "sql",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.735,
+      "fmt": true,
+      "text": "The little boy was very happy and said, \"I'm sorry, I'm"
+    },
+    {
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.822,
+      "fmt": true,
+      "text": "The little boy was very happy. He was so excited to see the "
+    },
+    {
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "math",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.822,
+      "fmt": true,
+      "text": "The little boy was very happy. He was so excited to see the "
+    },
+    {
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.822,
+      "fmt": true,
+      "text": "The little boy was very happy. He was so excited to see the "
+    },
+    {
+      "prompt": "out-of-domain general knowledge",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "sql",
+      "adj": -4.165,
+      "fmt": true,
+      "text": "SELECT COUNT() FROM table_13333_1 WHERE player"
+    },
+    {
+      "prompt": "nonsense tokens",
+      "assembly": "none",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.145,
+      "fmt": true,
+      "text": " was a little girl who liked to play with her toys. She had "
+    },
+    {
+      "prompt": "nonsense tokens",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.905,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "nonsense tokens",
+      "assembly": "code",
+      "abstain": false,
+      "claim": "base",
+      "adj": -1.145,
+      "fmt": true,
+      "text": " was a little girl who liked to play with her toys. She had "
+    },
+    {
+      "prompt": "nonsense tokens",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "sql",
+      "adj": -4.167,
+      "fmt": true,
+      "text": "SELECT COUNT() FROM table_13333_1 WHERE player"
+    },
+    {
+      "prompt": "contradictory SQL/code",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.957,
+      "fmt": true,
+      "text": " was a very special day. He was very excited to go to the pa"
+    },
+    {
+      "prompt": "contradictory SQL/code",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.922,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "contradictory SQL/code",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.957,
+      "fmt": true,
+      "text": " was a very special day. He was very excited to go to the pa"
+    },
+    {
+      "prompt": "contradictory SQL/code",
+      "assembly": "sql",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.957,
+      "fmt": true,
+      "text": " was a very special day. He was very excited to go to the pa"
+    },
+    {
+      "prompt": "bare math word",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.884,
+      "fmt": true,
+      "text": "The little girl was very happy. She was very excited to see "
+    },
+    {
+      "prompt": "bare math word",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.92,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "bare math word",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.884,
+      "fmt": true,
+      "text": "The little girl was very happy. She was very excited to see "
+    },
+    {
+      "prompt": "bare math word",
+      "assembly": "sql",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.884,
+      "fmt": true,
+      "text": "The little girl was very happy. She was very excited to see "
+    },
+    {
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "none",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.485,
+      "fmt": true,
+      "text": "One day, a little girl named Lily went to the park with her "
+    },
+    {
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.899,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "code",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.485,
+      "fmt": true,
+      "text": "One day, a little girl named Lily went to the park with her "
+    },
+    {
+      "prompt": "story with numbers (ambiguous)",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.485,
+      "fmt": true,
+      "text": "One day, a little girl named Lily went to the park with her "
+    },
+    {
+      "prompt": "empty-ish prompt",
+      "assembly": "none",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.932,
+      "fmt": true,
+      "text": " was a little girl who liked to play with her toys. She had "
+    },
+    {
+      "prompt": "empty-ish prompt",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.924,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "empty-ish prompt",
+      "assembly": "code",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.932,
+      "fmt": true,
+      "text": " was a little girl who liked to play with her toys. She had "
+    },
+    {
+      "prompt": "empty-ish prompt",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "base",
+      "adj": -0.932,
+      "fmt": true,
+      "text": " was a little girl who liked to play with her toys. She had "
+    },
+    {
+      "prompt": "long math, English-mixed",
+      "assembly": "none",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.658,
+      "fmt": true,
+      "text": "The next day, the little boy was very excited to go to the p"
+    },
+    {
+      "prompt": "long math, English-mixed",
+      "assembly": "math",
+      "abstain": false,
+      "claim": "math",
+      "adj": -3.905,
+      "fmt": true,
+      "text": "We have $y$ and $y$ and $y$ and $y"
+    },
+    {
+      "prompt": "long math, English-mixed",
+      "assembly": "code",
+      "abstain": true,
+      "claim": null,
+      "adj": -1.658,
+      "fmt": true,
+      "text": "The next day, the little boy was very excited to go to the p"
+    },
+    {
+      "prompt": "long math, English-mixed",
+      "assembly": "sql",
+      "abstain": false,
+      "claim": "sql",
+      "adj": -4.149,
+      "fmt": true,
+      "text": "SELECT COUNT() FROM table_13333_1 WHERE player"
+    }
+  ],
+  "safe_none": "7/12",
+  "risky": "24/36",
+  "determinism": true
+}
