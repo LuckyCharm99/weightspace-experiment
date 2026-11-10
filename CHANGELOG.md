@@ -3,7 +3,25 @@
 All milestones below were **measured**, not estimated; raw JSONs live in
 `results/`. Versions refer to the experiment ladder in `src/`.
 
-## 2026-11-10 (late) — v16: nine experts (current shipped configuration)
+## 2026-11-11 — v17: ten experts (target reached; current shipped configuration)
+
+**10th expert:** propositional logics (`ergotts/propositional-logic`: NL
+argument → numbered symbolic proof; 1400 train / 200 held-out eval).
+9.6283 → **3.9382** (−59%, the strongest delta of the whole program), purity
+and swap-restore bit-exact, and the **lowest story-tax of all ten experts**
+(story 5.58 on-module vs regex 8.45). Library: math, code, sql, chess, chem,
+regex, med, units, music, logics.
+
+**Gate (v17):** 512×11 circuit across 11 module worlds; held-out **0.9530**,
+sha `b1cfe70452726527` — the arity tax is real at the circuit level
+(0.9953 → 0.9845 → 0.9722 → 0.9530 for 4 → 7 → 10 → 11 classes) but the
+END-TO-END gate barely moves: grid **331/341 (97.1 %)** at held-out-calibrated
+M = **1.09** (p1 of TP margins; same calibration procedure as v15/v16, never
+tuned on the grid), risky 2, **30/30** empty-assembly abstains over the full
+30-probe confusing corpus, determinism 3× bit-identical. Trap commits 11/110
+— same MCQ-format-capture pattern, now including logic⊗chess hybrids.
+
+## 2026-11-10 (late) — v16: nine experts (superseded by v17)
 
 **Batch-2 experts** (same frozen base, 600 steps, bit-exact proof ladder):
 med (MedMCQA) 11.4454→6.0665, units 9.8333→**3.7215**, music (ABC notation)

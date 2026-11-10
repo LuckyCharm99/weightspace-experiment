@@ -12,7 +12,7 @@ This experiment implements something different: *which model is currently assemb
 Remove an expert module and the model declines to answer; attach it and the same
 frozen weights answer. The refusal decision is a boolean of two things: a trained
 linear circuit on the final hidden state (*needed*) and the bit-exact assembly
-manifest (*present*) — deterministic, auditable, and now scaled to **nine experts**
+manifest (*present*) — deterministic, auditable, and now scaled to **ten experts**
 ([CHANGELOG](CHANGELOG.md)).
 
 ![architecture vs market MoE](results/figures/architecture_vs_market_moe.png)
@@ -98,7 +98,9 @@ src/
   train_sql_module.py       # stage 3b: third domain (nl -> SQL)
 train_batch1_modules.py   # stage 3c: chess, chem, regex experts (batch-1)
 train_batch2b.py          # stage 3d: med, units, music experts (batch-2, lang skipped)
-abstention_v16.py         # 9-expert hard gate + 280-cell grid + 29-probe stress (shipped, M=1.23)
+train_logics.py           # stage 3e: 10th expert (propositional logics)
+abstention_v16.py         # 9-expert hard gate + 280-cell grid + 29-probe stress (M=1.23)
+abstention_v17.py         # 10-expert hard gate + 341-cell grid + 30-probe stress (shipped, M=1.09)
 abstention_v15.py         # 6-expert hard gate + 133-cell grid + 20-prompt stress (shipped, M=2)
   abstention_v5.py          # stage 4 core: vocab, two-world machinery, head, trainer
   abstention_v9.py v9b.py v10.py v11.py v12.py  # fixes -> 17/17 -> 39/40 -> uniformity ablation
@@ -218,7 +220,7 @@ The 6-expert bundle `module_bundles_lib10.pt` exceeds GitHub's 100 MB file
 limit, so the repo ships `checkpoints/lib10_{chess,chem,regex}.pt` (25 MB each)
 plus `module_bundles_merged.pt` (math, code, sql); the library is their union.
 
-## Batch-2: nine experts + v16 (current shipped configuration)
+## Batch-2 + logics: ten experts + v17 (current shipped configuration)
 
 Three more domains (med = MedMCQA single-answer, units = English unit
 arithmetic, music = ABC-notation theory) on the same protocol:
@@ -244,6 +246,17 @@ instructive: **MCQ-format traps are claimed by the med expert regardless of
 content** (a music-theory MCQ reads as medicine). Format dominance over
 semantics is the documented failure mode of a linear circuit at 10-way arity;
 raising M to 3 costs one grid cell and removes one trap.
+
+**10th expert (same day):** propositional logics — NL argument → numbered
+symbolic proof (`ergotts/propositional-logic`). 9.63 → **3.94**, the strongest
+off→on delta in the program and the lowest story cost of all ten experts;
+purity + swap bit-exact. The gate was rebuilt at 11 classes (`abstention_v17.py`,
+held-out 0.9530, M = 1.09 from the same held-out p1 calibration): grid
+**331/341**, risky 2, **30/30** empty-assembly safety, 3× bit-identical. The
+circuit's held-out accuracy declines smoothly with arity (0.995 → 0.984 →
+0.972 → 0.953 for 4 → 7 → 10 → 11 classes) while the end-to-end gate stays
+≈ 97 % — the boolean composition with the exact presence manifest absorbs
+most of the classifier's loss.
 
 ## Ablation: layer-uniform "confident" abstention (v12, v12b)
 

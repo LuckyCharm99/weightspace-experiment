@@ -1,0 +1,20 @@
+{
+  "logics": {
+    "base_off": {
+      "story": 3.4773,
+      "logics": 9.6283
+    },
+    "on": {
+      "story": 5.5838,
+      "logics": 3.9382
+    },
+    "purity": {
+      "logics": 9.6283
+    },
+    "swap": {
+      "logics": 3.9382
+    },
+    "purity_ok": true,
+    "swap_ok": true
+  }
+}
